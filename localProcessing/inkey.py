@@ -70,7 +70,7 @@ def getKey():
     import sys
     for i in xrange(sys.maxint):
         k=inkey()
-        if k<>'':break
+        if k!='':break
 
     return k
 
