@@ -68,7 +68,7 @@ class _GetchMacCarbon:
 def getKey():
     inkey = _Getch()
     import sys
-    for i in range(sys.maxint):
+    for i in range(sys.maxsize):
         k=inkey()
         if k!='':break
 
