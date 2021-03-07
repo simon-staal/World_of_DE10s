@@ -1,0 +1,911 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+                              obj/default/hello_world_small.o (__addsf3)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+                              obj/default/hello_world_small.o (__mulsf3)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+                              obj/default/hello_world_small.o (__fixsfsi)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+                              obj/default/hello_world_small.o (__floatsisf)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+                              obj/default/hello_world_small.o (__divdf3)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+                              obj/default/hello_world_small.o (__floatsidf)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+                              obj/default/hello_world_small.o (__truncdfsf2)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o) (__clzsi2)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o) (__udivsi3)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o) (__mulsi3)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o) (__clz_tab)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                              obj/default/hello_world_small.o (memset)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+                              obj/default/hello_world_small.o (alt_irq_register)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_active)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o (alt_load)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o (alt_main)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+                              obj/default/hello_world_small.o (alt_up_accelerometer_spi_open_dev)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o) (alt_errno)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o) (alt_find_dev)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_entry)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_handler)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o) (errno)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o) (memcpy)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000000000 0x0000000000000020
+onchip_memory    0x0000000000000020 0x000000000000ffe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a
+LOAD c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a
+                0x0000000000000000                __alt_mem_onchip_memory = 0x0
+
+.entry          0x0000000000000000       0x20
+ *(.entry)
+ .entry         0x0000000000000000       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+                0x0000000000000000                __reset
+                0x000000000000000c                _exit
+
+.exceptions     0x0000000000000020      0x160
+                0x0000000000000020                PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x0000000000000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000000020        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000000020        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000000020       0x54 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000000074       0x10 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000000084        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000000088        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000000008c        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000000008c        0x8 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000000094       0x14 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000000000a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000000000a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000000000a8       0x54 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000000000fc       0x60 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000000000fc                alt_irq_handler
+ .exceptions    0x000000000000015c       0x24 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000000015c                alt_instruction_exception_entry
+                0x0000000000000180                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x0000000000000020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x0000000000000180     0x1f80
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000180       0x3c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+                0x0000000000000180                _start
+ .text          0x00000000000001bc      0x1a8 obj/default/hello_world_small.o
+                0x00000000000001bc                sys_timer_isr
+                0x000000000000023c                led_write
+                0x000000000000024c                convert_read
+                0x0000000000000280                timer_init
+                0x00000000000002cc                LPF
+ .text.startup  0x0000000000000364      0x140 obj/default/hello_world_small.o
+                0x0000000000000364                main
+ .text          0x00000000000004a4      0x46c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+                0x00000000000004a4                __addsf3
+ .text          0x0000000000000910      0x400 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+                0x0000000000000910                __mulsf3
+ .text          0x0000000000000d10       0x70 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+                0x0000000000000d10                __fixsfsi
+ .text          0x0000000000000d80      0x124 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+                0x0000000000000d80                __floatsisf
+ .text          0x0000000000000ea4      0x930 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+                0x0000000000000ea4                __divdf3
+ .text          0x00000000000017d4       0xb8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+                0x00000000000017d4                __floatsidf
+ .text          0x000000000000188c      0x170 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+                0x000000000000188c                __truncdfsf2
+ .text          0x00000000000019fc       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+                0x00000000000019fc                __clzsi2
+ .text          0x0000000000001a50      0x1b4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x0000000000001a50                __divsi3
+                0x0000000000001ad0                __modsi3
+                0x0000000000001b44                __udivsi3
+                0x0000000000001ba8                __umodsi3
+ .text          0x0000000000001c04       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x0000000000001c04                __mulsi3
+ .text          0x0000000000001c2c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .text          0x0000000000001c2c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .text.memset   0x0000000000001c2c       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                0x0000000000001c2c                memset
+ .text          0x0000000000001c4c       0x90 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+                0x0000000000001c4c                alt_irq_register
+ .text          0x0000000000001cdc        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000001cdc       0x84 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000001cdc                alt_load
+ .text          0x0000000000001d60       0x2c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000001d60                alt_main
+ .text          0x0000000000001d8c       0x30 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000001d8c                alt_irq_init
+                0x0000000000001dac                alt_sys_init
+ .text          0x0000000000001dbc      0x16c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+                0x0000000000001dbc                alt_up_accelerometer_spi_open_dev
+                0x0000000000001dc4                alt_up_accelerometer_spi_read_address_register
+                0x0000000000001dd8                alt_up_accelerometer_spi_read
+                0x0000000000001df8                alt_up_accelerometer_spi_write
+                0x0000000000001e14                alt_up_accelerometer_spi_read_x_axis
+                0x0000000000001e70                alt_up_accelerometer_spi_read_y_axis
+                0x0000000000001ecc                alt_up_accelerometer_spi_read_z_axis
+ .text          0x0000000000001f28        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000001f28                alt_dcache_flush_all
+ .text          0x0000000000001f2c        0x8 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x0000000000001f34       0x6c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0000000000001f34                alt_dev_llist_insert
+ .text          0x0000000000001fa0        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000001fa0       0x70 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000000000001fa0                alt_find_dev
+ .text          0x0000000000002010        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000002010                alt_icache_flush_all
+ .text          0x0000000000002014        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000000002014        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000000002014        0x8 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000002014                altera_nios2_gen2_irq_init
+ .text          0x000000000000201c        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000000000000201c       0x70 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000000201c                alt_exception_cause_generated_bad_addr
+ .text          0x000000000000208c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .text          0x000000000000208c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .text.memcmp   0x000000000000208c       0x30 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+                0x000000000000208c                memcmp
+ .text          0x00000000000020bc        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .text.memcpy   0x00000000000020bc       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                0x00000000000020bc                memcpy
+ .text          0x00000000000020e4        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x00000000000020e4       0x1c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x00000000000020e4                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000000002100                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x0000000000002100                . = ALIGN (0x4)
+
+.rodata         0x0000000000002100      0x124
+                0x0000000000002100                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x0000000000002100                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x0000000000002100       0x17 obj/default/hello_world_small.o
+ *fill*         0x0000000000002117        0x1 
+ .rodata        0x0000000000002118      0x100 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+                0x0000000000002118                __clz_tab
+ .rodata.str1.4
+                0x0000000000002218       0x17 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata.str1.4
+                0x0000000000002218        0xa c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000000000002230                . = ALIGN (0x4)
+ *fill*         0x0000000000002222        0x2 
+                0x0000000000002224                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x0000000000002100                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x0000000000002224       0xa8 load address 0x00000000000022cc
+                0x0000000000002224                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x0000000000002224                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000002224        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000002224        0x0 obj/default/hello_world_small.o
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .data          0x0000000000002224        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .data          0x0000000000002224        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .data          0x0000000000002224        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000002224        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000002224        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000002224       0x2c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000002250        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .data          0x0000000000002250        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000002250       0x58 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000002250                alt_fd_list
+                0x0000000000002280                alt_dev_null
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00000000000022a8        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x00000000000022a8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .data          0x00000000000022a8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .data          0x00000000000022a8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .data          0x00000000000022a8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x000000000000a2a8                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00000000000022a8        0x4 obj/default/hello_world_small.o
+                0x00000000000022a8                TAPS
+ .sdata         0x00000000000022ac        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00000000000022ac                alt_priority_mask
+ .sdata         0x00000000000022b0        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000000000022b0                jtag_uart
+ .sdata         0x00000000000022b4       0x14 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00000000000022b4                alt_max_fd
+                0x00000000000022b8                alt_dev_list
+                0x00000000000022c0                alt_fs_list
+ .sdata         0x00000000000022c8        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00000000000022c8                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00000000000022cc                . = ALIGN (0x4)
+                0x00000000000022cc                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x00000000000022cc                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x00000000000022cc                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x0000000000002374      0x120
+                0x0000000000002374                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000002374        0x6 obj/default/hello_world_small.o
+                0x0000000000002374                level
+                0x0000000000002378                led
+                0x0000000000002379                pwm
+ *fill*         0x000000000000237a        0x2 
+ .sbss          0x000000000000237c        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000000237c                alt_irq_active
+ .sbss          0x0000000000002380        0xc c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000002380                alt_envp
+                0x0000000000002384                alt_argv
+                0x0000000000002388                alt_argc
+ .sbss          0x000000000000238c        0x4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000000238c                alt_instruction_exception_handler
+ .sbss.errno    0x0000000000002390        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                0x0000000000002390                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000002394        0x0 obj/default/hello_world_small.o
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .bss           0x0000000000002394        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000002394        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000002394      0x100 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000002394                alt_irq
+ .bss           0x0000000000002494        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000002494        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000002494        0x0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x0000000000002494        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000000000002494        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x0000000000002494        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .bss           0x0000000000002494        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+                0x0000000000002494                . = ALIGN (0x4)
+                0x0000000000002494                __bss_end = ABSOLUTE (.)
+
+.onchip_memory  0x0000000000002494        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory_start = ABSOLUTE (.))
+ *(.onchip_memory .onchip_memory. onchip_memory.*)
+                0x0000000000002494                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory_end = ABSOLUTE (.))
+                0x0000000000002494                _end = ABSOLUTE (.)
+                0x0000000000002494                end = ABSOLUTE (.)
+                0x0000000000002494                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory_load_addr = LOADADDR (.onchip_memory))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d obj/default/hello_world_small.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x000000000000002d       0x2e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x480
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x28 obj/default/hello_world_small.o
+ .debug_aranges
+                0x0000000000000050       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_aranges
+                0x0000000000000070       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_aranges
+                0x0000000000000090       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_aranges
+                0x00000000000000b0       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_aranges
+                0x00000000000000d0       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_aranges
+                0x00000000000000f0       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_aranges
+                0x0000000000000110       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_aranges
+                0x0000000000000130       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x0000000000000150       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x0000000000000170       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x0000000000000190       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_aranges
+                0x00000000000001a8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_aranges
+                0x00000000000001e8       0x18 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x0000000000000200       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000220       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000240       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000260       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .debug_aranges
+                0x0000000000000280       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000000000002e0       0x18 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000000000002f8       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x0000000000000318       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000338       0x30 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000368       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x0000000000000388       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x00000000000003a8       0x38 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000000000003e0       0x28 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x0000000000000408       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000420       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x0000000000000440       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000460       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x4cd3
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x22 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000022      0x729 obj/default/hello_world_small.o
+ .debug_info    0x000000000000074b      0x35b c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_info    0x0000000000000aa6      0x424 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_info    0x0000000000000eca      0x1cd c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_info    0x0000000000001097      0x24f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_info    0x00000000000012e6      0x8ec c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_info    0x0000000000001bd2      0x2bf c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_info    0x0000000000001e91      0x2c2 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_info    0x0000000000002153      0x133 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_info    0x0000000000002286      0x368 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x00000000000025ee       0xcb c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x00000000000026b9       0xc2 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_info    0x000000000000277b       0xe7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_info    0x0000000000002862      0x337 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x0000000000002b99       0x8b c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000002c24      0x267 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000002e8b      0x129 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000002fb4      0x42c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000033e0      0x4b1 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .debug_info    0x0000000000003891       0x8c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000000000000391d      0x57a c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000000000003e97      0x1d1 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x0000000000004068       0x9d c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000004105      0x348 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x000000000000444d       0x8c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000044d9       0x22 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00000000000044fb      0x19f c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000000000000469a       0x8c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000004726       0x22 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000000000004748      0x20f c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x0000000000004957       0x84 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000049db      0x100 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x0000000000004adb      0x128 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000004c03       0xd0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x0000000000000000     0x1ff6
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x2c0 obj/default/hello_world_small.o
+ .debug_abbrev  0x00000000000002d2      0x166 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_abbrev  0x0000000000000438      0x14a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_abbrev  0x0000000000000582      0x142 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_abbrev  0x00000000000006c4      0x173 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_abbrev  0x0000000000000837      0x16b c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_abbrev  0x00000000000009a2      0x16d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_abbrev  0x0000000000000b0f      0x132 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_abbrev  0x0000000000000c41       0xbf c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x0000000000000d00      0x103 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x0000000000000e03       0x7d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x0000000000000e80       0x70 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_abbrev  0x0000000000000ef0       0x9e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000000f8e      0x1fa c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_abbrev  0x0000000000001188       0x44 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000000000011cc      0x125 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000000000012f1       0xba c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000013ab      0x1c9 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000001574      0x130 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .debug_abbrev  0x00000000000016a4       0x44 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000000000016e8      0x117 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00000000000017ff      0x145 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x0000000000001944       0x5a c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x000000000000199e      0x12f c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000000000001acd       0x44 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000001b11       0x12 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000001b23      0x145 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000001c68       0x44 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000001cac       0x12 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000001cbe      0x116 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000001dd4       0x39 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000001e0d       0x9e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000000000001eab       0xbe c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000001f69       0x8d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x0000000000000000     0x3eab
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x44b obj/default/hello_world_small.o
+ .debug_line    0x00000000000004b1      0x623 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_line    0x0000000000000ad4      0x546 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_line    0x000000000000101a      0x11d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_line    0x0000000000001137      0x218 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_line    0x000000000000134f      0xb4f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_line    0x0000000000001e9e      0x1e6 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_line    0x0000000000002084      0x2f6 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_line    0x000000000000237a       0xaa c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_line    0x0000000000002424      0x306 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x000000000000272a       0xb7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x00000000000027e1       0x59 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_line    0x000000000000283a      0x188 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_line    0x00000000000029c2      0x1b1 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x0000000000002b73       0x50 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000002bc3      0x101 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000002cc4       0xe0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000002da4      0x16d c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000002f11      0x222 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .debug_line    0x0000000000003133       0x53 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000003186      0x1a0 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000000000003326      0x139 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x000000000000345f       0x51 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000000000034b0      0x125 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00000000000035d5       0x51 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000003626       0x6b c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000003691      0x122 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000000000037b3       0x5a c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x000000000000380d       0xb3 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00000000000038c0       0xee c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x00000000000039ae       0x61 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000003a0f      0x192 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x0000000000003ba1      0x18d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000003d2e      0x17d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x0000000000000000      0x608
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0xd8 obj/default/hello_world_small.o
+ .debug_frame   0x00000000000000d8       0x3c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_frame   0x0000000000000114       0x58 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_frame   0x000000000000016c       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_frame   0x000000000000018c       0x38 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_frame   0x00000000000001c4       0x58 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_frame   0x000000000000021c       0x38 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_frame   0x0000000000000254       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_frame   0x0000000000000274       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_frame   0x0000000000000294       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000000000002e4       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x0000000000000304       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000324       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_frame   0x0000000000000344       0x2c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000370       0x2c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000000000000039c       0x3c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000000000003d8       0x80 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .debug_frame   0x0000000000000458       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000478       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000000498       0x2c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000000000004c4       0x40 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x0000000000000504       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000524       0x34 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000000000000558       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000578       0x30 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x00000000000005a8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000000000005c8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_frame   0x00000000000005e8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x0000000000000000     0x191d
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x6c c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .debug_str     0x000000000000006c      0x2d7 obj/default/hello_world_small.o
+                                        0x338 (size before relaxing)
+ .debug_str     0x0000000000000343      0x265 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+                                        0x2ee (size before relaxing)
+ .debug_str     0x00000000000005a8      0x130 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+                                        0x31c (size before relaxing)
+ .debug_str     0x00000000000006d8       0x4f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+                                        0x227 (size before relaxing)
+ .debug_str     0x0000000000000727       0x63 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+                                        0x2b9 (size before relaxing)
+ .debug_str     0x000000000000078a      0x1a9 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+                                        0x40a (size before relaxing)
+ .debug_str     0x0000000000000933       0x62 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+                                        0x2dd (size before relaxing)
+ .debug_str     0x0000000000000995       0x37 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+                                        0x2bb (size before relaxing)
+ .debug_str     0x00000000000009cc       0x60 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+                                        0x20a (size before relaxing)
+ .debug_str     0x0000000000000a2c       0x6e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                        0x1e0 (size before relaxing)
+ .debug_str     0x0000000000000a9a       0x3a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                                        0x1a1 (size before relaxing)
+ .debug_str     0x0000000000000ad4      0x1ed c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_str     0x0000000000000ad4      0x133 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                                        0x1d6 (size before relaxing)
+ .debug_str     0x0000000000000c07       0xb4 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+                                        0x20b (size before relaxing)
+ .debug_str     0x0000000000000cbb       0x29 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                        0x158 (size before relaxing)
+ .debug_str     0x0000000000000ce4      0x124 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x269 (size before relaxing)
+ .debug_str     0x0000000000000e08       0x5e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x199 (size before relaxing)
+ .debug_str     0x0000000000000e66       0xde c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x2e3 (size before relaxing)
+ .debug_str     0x0000000000000f44      0x103 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+                                        0x363 (size before relaxing)
+ .debug_str     0x0000000000001047       0x1f c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x16a (size before relaxing)
+ .debug_str     0x0000000000001066      0x155 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x379 (size before relaxing)
+ .debug_str     0x00000000000011bb       0x48 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                        0x1e1 (size before relaxing)
+ .debug_str     0x0000000000001203       0x14 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x154 (size before relaxing)
+ .debug_str     0x0000000000001217       0x25 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                        0x202 (size before relaxing)
+ .debug_str     0x000000000000123c       0x1f c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x16a (size before relaxing)
+ .debug_str     0x000000000000125b       0x18 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                                         0x75 (size before relaxing)
+ .debug_str     0x0000000000001273       0x3a c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x1ac (size before relaxing)
+ .debug_str     0x00000000000012ad       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x171 (size before relaxing)
+ .debug_str     0x00000000000012cd       0x1e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                                         0x7b (size before relaxing)
+ .debug_str     0x00000000000012eb      0x48b c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5be (size before relaxing)
+ .debug_str     0x0000000000001776       0xd6 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                                        0x1cf (size before relaxing)
+ .debug_str     0x000000000000184c       0x3f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+                                        0x1d6 (size before relaxing)
+ .debug_str     0x000000000000188b       0x53 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                                        0x1ea (size before relaxing)
+ .debug_str     0x00000000000018de       0x3f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x1dc (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x568d
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x316 obj/default/hello_world_small.o
+ .debug_loc     0x0000000000000316      0xfb5 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_loc     0x00000000000012cb      0x96f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_loc     0x0000000000001c3a      0x136 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_loc     0x0000000000001d70      0x250 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_loc     0x0000000000001fc0     0x2228 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_loc     0x00000000000041e8      0x239 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_loc     0x0000000000004421      0x41a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_loc     0x000000000000483b       0xbe c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_loc     0x00000000000048f9      0x5d0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000004ec9       0xa7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x0000000000004f70       0xac c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_loc     0x000000000000501c      0x13e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_loc     0x000000000000515a       0x25 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x000000000000517f       0x6f c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(altera_up_avalon_accelerometer_spi.o)
+ .debug_loc     0x00000000000051ee       0x8e c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x000000000000527c       0xc2 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x000000000000533e       0xac c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000000000053ea       0x73 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_loc     0x000000000000545d       0xc2 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x000000000000551f      0x12a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_loc     0x0000000000005649       0x44 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+                0x0000000000010000                __alt_data_end = 0x10000
+                0x0000000000010000                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0x10000)
+OUTPUT(nios_accelerometer_v2.elf elf32-littlenios2)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000      0xa58
+ .debug_ranges  0x0000000000000000       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x88 obj/default/hello_world_small.o
+ .debug_ranges  0x00000000000000a8      0x208 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(addsf3.o)
+ .debug_ranges  0x00000000000002b0      0x108 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(mulsf3.o)
+ .debug_ranges  0x00000000000003b8       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(fixsfsi.o)
+ .debug_ranges  0x00000000000003d0       0xa0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsisf.o)
+ .debug_ranges  0x0000000000000470      0x280 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(divdf3.o)
+ .debug_ranges  0x00000000000006f0       0xd8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(floatsidf.o)
+ .debug_ranges  0x00000000000007c8       0x78 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(truncdfsf2.o)
+ .debug_ranges  0x0000000000000840       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(_clzsi2.o)
+ .debug_ranges  0x0000000000000860       0x70 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x00000000000008d0       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_ranges  0x00000000000008e0       0x48 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_ranges  0x0000000000000928       0x30 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000958       0x18 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_ranges  0x0000000000000970       0x20 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_ranges  0x0000000000000990       0x28 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000000000009b8       0x28 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000000000009e0       0x30 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x0000000000000a10       0x18 c:/intelFPGA_lite/ip_labs/lab_3/Golden_Top/software/nios_accelerometer_v2_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x0000000000000a28       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_ranges  0x0000000000000a38       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000a48       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
