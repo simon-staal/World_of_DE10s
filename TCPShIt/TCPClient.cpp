@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     struct sockaddr_in serv_addr;
     std::string hello = "Hello from client";
     char buffer[1024] = {0};
-    std::string serverip = "serveriphere"
+    std::string serverip = "54.90.38.208";
 
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 
 
     // Convert IPv4 and IPv6 addresses from text to binary form
-    if(inet_pton(AF_INET, serverip , &serv_addr.sin_addr)<=0)
+    if(inet_pton(AF_INET, serverip.c_str() , &serv_addr.sin_addr)<=0)
     {
         printf("\nInvalid address/ Address not supported \n");
         return -1;
@@ -39,6 +39,10 @@ int main(int argc, char const *argv[])
         return -1;
     }
     send(sock , hello.c_str() , strlen(hello.c_str()) , 0 );
+    for( int i = 0; i < 10; i++){
+      std::string k = std::to_string(i);
+      send(sock, k.c_str(), strlen(k.c_str()) , 0 );
+    }
     printf("Hello message sent\n");
     valread = read( sock , buffer, 1024);
     printf("%s\n",buffer );
