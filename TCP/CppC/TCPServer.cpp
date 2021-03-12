@@ -8,7 +8,7 @@
 #include <iostream>
 #include <arpa/inet.h>
 
-#define PORT 8081
+#define PORT 8080
 
 int arraycompare(char a[128], char b[128]);
 void copyarray(char a[128], char b[128]);
@@ -109,10 +109,7 @@ int main(int argc, char const *argv[])
       std::cout << buffer << std::endl;
 
       if(arraycompare(emptybuffer, buffer)){
-        for(unsigned i = 0; i < 60; i++){
-          send(newconnection2 , buffer , 128 , 0 );
-          std::cout << "Message sent" << std::endl;
-        }
+        send(newconnection2 , buffer , 128 , 0 );
       }
 
     }
