@@ -63,10 +63,7 @@ int main(int argc, char const *argv[])
       std::cin >> msg;
       send(sock , msg.c_str() , strlen(msg.c_str()) , 0);
 
-      if(valread = read(newconnection , buffer, 128) <= 0){
-        std::cout << "Connection 1 Dropped" << std::endl;
-        break;
-      }
+
 
     }
     fflush(stdin);

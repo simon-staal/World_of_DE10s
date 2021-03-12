@@ -12,6 +12,7 @@
 
 int arraycompare(char a[128], char b[128]);
 void copyarray(char a[128], char b[128]);
+void cleararray(char a[128]);
 
 
 int main(int argc, char const *argv[])
@@ -23,6 +24,7 @@ int main(int argc, char const *argv[])
     char buffer[128] = {0};
     char buffer2[128] = {0};
     char copybuffer[128] = {0};
+    char emptybuffer[128] = {0};
     std::string hello = "Hello from server";
     int connections[10];
 
@@ -97,14 +99,17 @@ int main(int argc, char const *argv[])
 
     while(1){
 
+      cleararray(buffer);
+
       if(valread = read(newconnection , buffer, 128) <= 0){
         std::cout << "Connection 1 Dropped" << std::endl;
         break;
       }
 
-      if(arraycompare(copybuffer, buffer)){
+      std::cout << buffer << std::endl;
+
+      if(arraycompare(emptybuffer, buffer)){
         send(newconnection2 , buffer , 128 , 0 );
-        copyarray(copybuffer, buffer);
       }
 
     }
@@ -127,4 +132,11 @@ void copyarray(char a[128], char b[128]){
   for(int i = 0; i < 128; i++){
     a[i] = b[i];
   }
+}
+
+void cleararray(char a[128]){
+
+    for(int i = 0; i < 128; i++){
+      a[i] = '\0';
+    }
 }
