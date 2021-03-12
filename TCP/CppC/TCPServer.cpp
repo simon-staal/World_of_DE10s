@@ -109,7 +109,9 @@ int main(int argc, char const *argv[])
       std::cout << buffer << std::endl;
 
       if(arraycompare(emptybuffer, buffer)){
-        send(newconnection2 , buffer , 128 , 0 );
+        for(unsigned i = 0; i < 60; i++){
+          send(newconnection2 , buffer , 128 , 0 );
+        }
       }
 
     }
