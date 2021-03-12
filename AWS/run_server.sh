@@ -21,18 +21,24 @@ ssh -A -i st219-key-pair-2021-02-07.pem ubuntu@${1} << EOF
   sudo apt -y install flex
   echo "Packages installed successfully"
 
-  echo "###########################"
-  echo "Resetting environment"
-  rm -rf InfoProc_Project
-  echo "###########################"
+  echo "Building project"
+  if [ -d "InfoProc_Project" ]
+  then
+    cd InfoProc_Project
+    git pull origin master
+    cd
+  else
+    git clone git@github.com:sts219/InfoProc_Project.git
+  fi
+  echo "Most recent version obtained"
 
-  echo "Cloning repo"
-  git clone git@github.com:sts219/InfoProc_Project.git
-  echo "Repo cloned successfully"
-
   echo "###########################"
-  gcc InfoProc_Project/TCP/CppC/TCPServer.cpp -o server
+  g++ InfoProc_Project/TCP/CppC/TCPServer.cpp -o server
   ./server
+
+  echo "###########################"
+  echo "Cleaning"
+  rm server
 EOF
 
 #echo "###########################"

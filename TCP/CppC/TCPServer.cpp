@@ -8,7 +8,7 @@
 #include <iostream>
 #include <arpa/inet.h>
 
-#define PORT 8080
+#define PORT 8081
 
 int arraycompare(char a[128], char b[128]);
 void copyarray(char a[128], char b[128]);
