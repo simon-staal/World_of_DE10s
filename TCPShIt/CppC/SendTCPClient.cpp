@@ -9,12 +9,16 @@
 
 #define PORT 8080
 
+int arraycompare(char a[128], char b[128]);
+void copyarray(char a[128], char b[128]);
+
 int main(int argc, char const *argv[])
 {
     int sock = 0, valread;
     struct sockaddr_in serv_addr;
     std::string hello = "Hello from client";
-    char buffer[1024] = {0};
+    char buffer[128] = {0};
+    char copybuffer[128] = {0};
     std::string serverip = "127.0.0.1";
 
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
@@ -44,17 +48,44 @@ int main(int argc, char const *argv[])
         return -1;
     }
 
-    std::cout << "Connection Established with Server" << std::endl << std::endl;
+    std::cout << "Connection Established with Server" << std::endl;
 
     std::string msg;
+
+    send(sock , hello.c_str() , strlen(hello.c_str()) , 0);
+    std::cout << "Message Sent" << std::endl;
+
+    valread = read(sock , buffer, 128);
+    std::cout << buffer << std::endl;
 
     while(1){
 
       std::cin >> msg;
       send(sock , msg.c_str() , strlen(msg.c_str()) , 0);
 
+      if(valread = read(newconnection , buffer, 128) <= 0){
+        std::cout << "Connection 1 Dropped" << std::endl;
+        break;
+      }
 
     }
-
+    fflush(stdin);
     return 0;
+}
+
+
+
+int arraycompare(char a[128], char b[128]){
+
+  for(int i = 0; i < 128; i++){
+    if(a[i] != b[i]){ return 1;};
+  }
+  return 0;
+}
+
+void copyarray(char a[128], char b[128]){
+
+  for(int i = 0; i < 128; i++){
+    a[i] = b[i];
+  }
 }

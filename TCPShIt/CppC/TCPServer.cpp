@@ -10,17 +10,21 @@
 
 #define PORT 8080
 
-int arraycompare(char* a, char* b);
+int arraycompare(char a[128], char b[128]);
+void copyarray(char a[128], char b[128]);
+
 
 int main(int argc, char const *argv[])
 {
-    int server_fd, newconnection, valread;
+    int server_fd, newconnection, newconnection2, valread;
     struct sockaddr_in address;
     int opt = 1;
     int addrlen = sizeof(address);
-    char buffer[256] = {0};
-    char buffer2[256] = {0};
+    char buffer[128] = {0};
+    char buffer2[128] = {0};
+    char copybuffer[128] = {0};
     std::string hello = "Hello from server";
+    int connections[10];
 
     std::cout << "Initialising" << std::endl;
 
@@ -55,42 +59,72 @@ int main(int argc, char const *argv[])
 
     std::cout << "Listening" << std::endl;
 
-    if (listen(server_fd, 3) < 0)
+    if (listen(server_fd, 9) < 0)
     {
         perror("Listening Failed");
         exit(EXIT_FAILURE);
     }
 
 
-
     if ((newconnection = accept(server_fd, (struct sockaddr *)&address,
                        (socklen_t*)&addrlen))<0)
     {
-        perror("Accepting Failed");
+        perror("Accepting Connection Failed");
         exit(EXIT_FAILURE);
     }
 
     std::cout << "Connection Established with " << inet_ntoa(address.sin_addr) << std::endl << std::endl;
 
-    send(newconnection , hello.c_str() , strlen(hello.c_str()) , 0 );
-    valread = read( newconnection , buffer, 256);
+    if ((newconnection2 = accept(server_fd, (struct sockaddr *)&address,
+                       (socklen_t*)&addrlen))<0)
+    {
+        perror("Accepting Connection Failed");
+        exit(EXIT_FAILURE);
+    }
+
+    std::cout << "Connection Established with " << inet_ntoa(address.sin_addr) << std::endl << std::endl;
+
+    valread = read(newconnection , buffer, 128);
     std::cout << buffer << std::endl;
+    send(newconnection , hello.c_str() , strlen(hello.c_str()) , 0 );
+    std::cout << "Message Sent to C1" << std::endl;
+
+    valread = read(newconnection2 , buffer2, 128);
+    std::cout << buffer2 << std::endl;
+    send(newconnection2 , hello.c_str() , strlen(hello.c_str()) , 0 );
+    std::cout << "Message Sent to C2" << std::endl;
+
 
     while(1){
 
-      
+      if(valread = read(newconnection , buffer, 128) <= 0){
+        std::cout << "Connection 1 Dropped" << std::endl;
+        break;
+      }
+
+      if(arraycompare(copybuffer, buffer)){
+        send(newconnection2 , buffer , 128 , 0 );
+        copyarray(copybuffer, buffer);
+      }
 
     }
 
-
+    fflush(stdin);
     return 0;
 }
 
 
-int arraycompare(char a[256], char b[256]){
+int arraycompare(char a[128], char b[128]){
 
-  for(int i = 0; i < 256; i++){
-    if(a[i] != b[i]){ return 0};
+  for(int i = 0; i < 128; i++){
+    if(a[i] != b[i]){ return 1;};
   }
-  return 1;
+  return 0;
+}
+
+void copyarray(char a[128], char b[128]){
+
+  for(int i = 0; i < 128; i++){
+    a[i] = b[i];
+  }
 }
