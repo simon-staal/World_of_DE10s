@@ -111,6 +111,7 @@ int main(int argc, char const *argv[])
       if(arraycompare(emptybuffer, buffer)){
         for(unsigned i = 0; i < 60; i++){
           send(newconnection2 , buffer , 128 , 0 );
+          std::cout << "Message sent" << std::endl;
         }
       }
 
