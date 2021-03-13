@@ -76,21 +76,21 @@ module DE10_LITE_Golden_Top(
 //=======================================================
 
 	nios_accelerometer u0 (
-		.clk_clk                                            (MAX10_CLK1_50),  //                                  clk.clk
-		.reset_reset_n                                      (1'b1),           //                                reset.reset_n
-		.led_external_connection_export                     (LEDR[9:0]),      //              led_external_connection.export
-		.accelerometer_spi_external_interface_I2C_SDAT      (GSENSOR_SDI),    // accelerometer_spi_external_interface.I2C_SDAT
-		.accelerometer_spi_external_interface_I2C_SCLK      (GSENSOR_SCLK),   //                                     .I2C_SCLK
-		.accelerometer_spi_external_interface_G_SENSOR_CS_N (GSENSOR_CS_N),   //                                     .G_SENSOR_CS_N
-		.accelerometer_spi_external_interface_G_SENSOR_INT  (GSENSOR_INT[1]),  //                                     .G_SENSOR_INT
-		.hex5_external_connection_export                    (HEX5),                    //             hex5_external_connection.export
-		.hex4_external_connection_export                    (HEX4),                    //             hex4_external_connection.export
-		.hex3_external_connection_export                    (HEX3),                    //             hex3_external_connection.export
-		.hex2_external_connection_export                    (HEX2),                    //             hex2_external_connection.export
-		.hex1_external_connection_export                    (HEX1),                    //             hex1_external_connection.export
-		.hex0_external_connection_export 						 (HEX0),
-		.button_external_connection_export                  (KEY[1:0]),                   //           button_external_connection.export
-		.switch_external_connection_export                  (SW[9:0])                   //           switch_external_connection.export
+		.clk_clk                                            (MAX10_CLK1_50),  //             clk.clk
+		.reset_reset_n                                      (1'b1),           //             reset.reset_n
+		.led_external_connection_export                     (LEDR[9:0]),      //             led_external_connection.export
+		.accelerometer_spi_external_interface_I2C_SDAT      (GSENSOR_SDI),    // 				 accelerometer_spi_external_interface.I2C_SDAT
+		.accelerometer_spi_external_interface_I2C_SCLK      (GSENSOR_SCLK),   //             .I2C_SCLK
+		.accelerometer_spi_external_interface_G_SENSOR_CS_N (GSENSOR_CS_N),   //             .G_SENSOR_CS_N
+		.accelerometer_spi_external_interface_G_SENSOR_INT  (GSENSOR_INT[1]), //             .G_SENSOR_INT
+		.hex5_external_connection_export                    (HEX5),           //             hex5_external_connection.export
+		.hex4_external_connection_export                    (HEX4),           //             hex4_external_connection.export
+		.hex3_external_connection_export                    (HEX3),           //             hex3_external_connection.export
+		.hex2_external_connection_export                    (HEX2),           //             hex2_external_connection.export
+		.hex1_external_connection_export                    (HEX1),           //             hex1_external_connection.export
+		.hex0_external_connection_export 						 (HEX0),				 //				 hex0_external_connection.export
+		.button_external_connection_export                  (KEY[1:0]),       //           	 button_external_connection.export
+		.switch_external_connection_export                  (SW[9:0])         //             switch_external_connection.export
 
 	);
 

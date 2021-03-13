@@ -877,7 +877,7 @@
 													</placeholder-map>
 												</leaf>
 											</node>
-											<node nodeId="1372710005725" orientation="VERTICAL" divider="0.9244644870349493">
+											<node nodeId="1372710005725" orientation="VERTICAL" divider="0.7111344537815126">
 												<node nodeId="1372710005727" orientation="HORIZONTAL" divider="0.4973513674296734">
 													<node nodeId="1372710005733" orientation="VERTICAL" divider="0.75">
 														<leaf id="0" nodeId="1372710005735">
@@ -1276,7 +1276,7 @@
 									<placeholder>dock.single.Parameters</placeholder>
 									<backup-path>
 										<node location="RIGHT" size="0.7781885397412199" id="1372710005721"/>
-										<node location="TOP" size="0.9244644870349493" id="1372710005725"/>
+										<node location="TOP" size="0.7111344537815126" id="1372710005725"/>
 										<node location="RIGHT" size="0.5026486325703265" id="1372710005727"/>
 										<node location="TOP" size="0.6704331450094162" id="1389812802503"/>
 										<leaf id="1389812800464"/>
