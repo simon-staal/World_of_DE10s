@@ -19,7 +19,10 @@ int main(int argc, char const *argv[])
     std::string hello = "Hello from client";
     char buffer[128] = {0};
     char copybuffer[128] = {0};
-    std::string serverip = "127.0.0.1";
+    std::string serverip = "3.19.63.165";
+    if(argc == 2){
+      serverip = argv[1];
+    }
 
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
