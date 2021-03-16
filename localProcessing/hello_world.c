@@ -13,17 +13,37 @@ char activegame(FILE* fp, alt_32 x, alt_32 y)
 {
     alt_32 radius = 50;
 
-	if((abs(x) > abs(y)) && (abs(x) > radius)){
-		if(x > 0){
+    // fprintf(fp, "<--> x : %d, y : %d <--> \n", x, y);
+
+    // Values chosen must perfectly align with adjacent characters
+
+	if((abs(x) > abs(y)) && (abs(x) > radius)){ // BR
+		if(x > 0 && abs(y) <= 20){
 		   	fprintf(fp, "<--> A <--> \n");
-		}else{
+		}else if(x < -radius && abs(y) <= 25){
 		   	fprintf(fp, "<--> D <--> \n");
+		}else if((x < -15) && y < -25){
+		   	fprintf(fp, "<--> TR <--> \n");
+		}else if(x < -15 && y > 25){
+			fprintf(fp, "<--> BR <--> \n");
+		}else if((x > 25) && y > 20){
+		   	fprintf(fp, "<--> BL <--> \n");
+		}else if((x > 25) && (y < -20)){
+		   	fprintf(fp, "<--> TL <--> \n");
 		}
-	}else if(abs(y) > radius){
-		if( y > 0){
+	}else if(abs(y) > radius){ // TL, TR, BL
+		if( abs(x) <= 25 && y > 0){
 			fprintf(fp, "<--> S <--> \n");
-		}else{
+		}else if((abs(x) <= 25) && (y < -radius)){
 			fprintf(fp, "<--> W <--> \n");
+		}else if((x > 25) && (y < -20)){
+		   	fprintf(fp, "<--> TL <--> \n");
+		}else if((x < -25) && y < -25){
+		   	fprintf(fp, "<--> TR <--> \n");
+		}else if((x > 25) && y > 20){
+		   	fprintf(fp, "<--> BL <--> \n");
+		}else if(x < -25 && y > 25){
+			fprintf(fp, "<--> BR <--> \n");
 		}
 	}else{
 		fprintf(fp, "<--> No movement <--> \n");
