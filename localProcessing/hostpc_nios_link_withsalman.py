@@ -81,7 +81,7 @@ def main():
 
         # SALMAN'S CODE
     #localhost in IPv4 interface
-    HOST = '3.19.63.165'
+    HOST = '52.56.73.213'
     # '3.139.59.213'
     #int with port number from 1-65535
     PORT = 8080
