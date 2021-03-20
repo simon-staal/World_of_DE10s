@@ -9,14 +9,16 @@
 #include <arpa/inet.h>
 #include <utility>
 #include <vector>
+#include <fcntl.h>
+
 
 #define PORT 8080
-#define PORT2 8081
+
 
 int arraycompare(char a[128], char b[128]);
 void copyarray(char a[128], char b[128]);
 void cleararray(char a[128]);
-void initialiseserver(int &server_fd, sockaddr_in &address, int a);
+void initialiseserver(int &server_fd, sockaddr_in &address);
 std::pair<std::string,int> acceptnewcon(int server_fd, std::pair<std::string,int> newcon, sockaddr_in &address);
 void greet(std::pair<std::string,int> &con);
 int checkconnections(std::vector<std::pair<std::string, int>> connections, int &u, int &p1, int &p2);
@@ -24,15 +26,16 @@ int checkconnections(std::vector<std::pair<std::string, int>> connections, int &
 
 int main(int argc, char const *argv[])
 {
-    int server_fd, valread, unityIN, player1IN, player2IN, errcheck, server_fd2, player1OUT, player2OUT, unityOUT;
+    int server_fd, valread, unity, player1, player2, errcheck;
     struct sockaddr_in address;
-    struct sockaddr_in address2;
 
     int addrlen = sizeof(address);
-    int addrlen2 = sizeof(address2);
     char p1IN[128] = {0};
     char p2IN[128] = {0};
+    char p1OUT[128] = {0};
+    char p2OUT[128] = {0};
     char uIN[128] = {0};
+    char uOUT[128] = {0};
     char copybuffer[128] = {0};
     char emptybuffer[128] = {0};
     std::vector<std::pair<std::string, int>> connections;
@@ -40,41 +43,66 @@ int main(int argc, char const *argv[])
 
     std::pair<std::string, int> defaultcon;
 
-    initialiseserver(server_fd, address, 0);
-
-    initialiseserver(server_fd2, address2, 1);
+    initialiseserver(server_fd, address);
 
 
     for(int i = 0; i < 3; i++){
       connections.push_back(acceptnewcon(server_fd, defaultcon, address));
     }
 
-    
 
-    if( ( errcheck = checkconnections(connections, unityIN, player1IN, player2IN)) < 0){
+
+    if( ( errcheck = checkconnections(connections, unity, player1, player2)) < 0){
       std::cout << ":(" << std::endl;
     }else{
       std::cout << "Connections Configured. It's going alright!" << std::endl;
     }
 
-    std::cout << "Player1 " << player1IN << std::endl << "Player2 " << player2IN << std::endl << "Unity " << unityIN << std::endl;
+    std::cout << "Player1 " << player1 << std::endl << "Player2 " << player2 << std::endl << "Unity " << unity << std::endl;
 
-
+    std::string tmp, toP1, toP2;
 
     while(1){
 
-      valread = read(player1IN , p1IN, 128);
-      std::cout << "Read from Player1 " << p1IN << std::endl;
-      msg = p1IN;
-      write(unityIN , msg.c_str() , strlen(msg.c_str())  );
-      std::cout << "Sent to Unity" << std::endl;
+      cleararray(p1IN);
+      cleararray(p2IN);
+      cleararray(uIN);
 
-      valread = read(player2IN , p2IN, 128);
-      std::cout << "Read from Player2 " << p2IN << std::endl;
-      msg = p2IN;
-      write(unityIN , msg.c_str() , strlen(msg.c_str())  );
-      std::cout << "Sent to Unity" << std::endl;
+      valread = recv(player1 , p1IN, 128, MSG_DONTWAIT);
+      if( strcmp(p1IN, emptybuffer) ){
+        std::cout << "Read from Player1 " << p1IN << std::endl;
+        tmp = p1IN;
+        msg = "z" + tmp;
+        send(unity , msg.c_str() , strlen(msg.c_str()), 0 );
+        std::cout << "Sent to Unity" << std::endl;
+      }
 
+      valread = recv(player2 , p2IN, 128, MSG_DONTWAIT);
+      if( strcmp(p2IN, emptybuffer) ){
+        std::cout << "Read from Player2 " << p2IN << std::endl;
+        tmp = p2IN;
+        msg = "x" + tmp;
+        send(unity , msg.c_str() , strlen(msg.c_str()), 0 );
+        std::cout << "Sent to Unity" << std::endl;
+      }
+
+      valread = recv(unity , uIN, 128, MSG_DONTWAIT);
+      if( strcmp(uIN, emptybuffer) ){
+        std::cout << "Read from Unity " << uIN << std::endl;
+        if(uIN[0] == 'z'){
+          toP1 = uIN[1];
+        }else if(uIN[0] == 'x'){
+          toP2 = uIN[1];
+        }
+
+        if( uIN[2] == 'z'){
+          toP1 = uIN[3];
+        }else if( uIN[2] == 'x'){
+          toP2 = uIN[3];
+        }
+        send(player1 , toP1.c_str() , strlen(toP1.c_str()), 0 );
+        send(player2 , toP2.c_str() , strlen(toP2.c_str()), 0 );
+      }
     }
 
 }
@@ -108,14 +136,14 @@ void cleararray(char a[128]){
 
 
 
-void initialiseserver(int &server_fd, sockaddr_in &address, int a){
+void initialiseserver(int &server_fd, sockaddr_in &address){
   int opt = 1;
   int addrlen = sizeof(address);
 
   std::cout << "Initialising" << std::endl;
 
   // Creating socket file descriptor
-  if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
+  if ((server_fd = socket(AF_INET, SOCK_STREAM , 0)) == 0)
   {
       perror("Socket Creation Failed");
       exit(EXIT_FAILURE);
@@ -129,14 +157,20 @@ void initialiseserver(int &server_fd, sockaddr_in &address, int a){
       exit(EXIT_FAILURE);
   }
 
+/*
+  int status = fcntl(server_fd, F_SETFL, fcntl(server_fd, F_GETFL, 0) | O_NONBLOCK);
+
+
+  if (status == -1){
+    perror("calling fcntl");
+  // handle the error.  By the way, I've never seen fcntl fail in this way
+  }
+*/
    address.sin_family = AF_INET;
    address.sin_addr.s_addr = INADDR_ANY;
-   if(a = 0){
-     address.sin_port = htons( PORT );
-   }else{
-     address.sin_port = htons( PORT2 );
+   address.sin_port = htons( PORT );
 
-   }
+
 
 
   // Forcefully attaching socket to the port 8080

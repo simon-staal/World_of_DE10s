@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
     char buffer[128] = {0};
     char copybuffer[128] = {0};
     std::string serverip = "127.0.0.1";
-    std::string whoiam = "Player";
+    std::string whoiam = "Unity";
     if(argc == 2){
       serverip = argv[1];
     }
@@ -51,14 +51,14 @@ int main(int argc, char const *argv[])
         cleararray(buffer);
 
         std::cin >> msg;
-        send(sock , msg.c_str() , strlen(msg.c_str()) , 0 );
+        send(sock , msg.c_str() , strlen(msg.c_str()) , MSG_DONTWAIT );
         std::cout << msg << " Sent" << std::endl;
 
-
-
-
         valread = recv(sock , buffer, 128, MSG_DONTWAIT);
-        std::cout << "Received " << buffer << std::endl;
+        if(buffer != copybuffer){
+          std::cout << "Received: " << buffer << std::endl;
+        }
+
 
     }
 
@@ -66,15 +66,6 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-
-void cleararray(char a[128]){
-
-  for(int i = 0; i < 128; i++){
-    a[i] = '\0';
-  }
-
-  return;
-}
 
 
 int arraycompare(char a[128], char b[128]){
@@ -92,7 +83,14 @@ void copyarray(char a[128], char b[128]){
   }
 }
 
+void cleararray(char a[128]){
 
+  for(int i = 0; i < 128; i++){
+    a[i] = '\0';
+  }
+
+  return;
+}
 
 
 void sockIt(int &sock){
