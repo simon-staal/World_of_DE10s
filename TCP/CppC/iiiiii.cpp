@@ -22,9 +22,10 @@ int main(int argc, char const *argv[])
     int sock = 0, valread, errcheck;
     int sock2 = 0;
     struct sockaddr_in serv_addr;
+    struct sockaddr_in serv_addr2;
     char buffer[128] = {0};
     char copybuffer[128] = {0};
-    std::string serverip = "127.0.0.1";
+    std::string serverip = "52.56.73.213";
     std::string whoiam = "Player";
     if(argc == 2){
       serverip = argv[1];
@@ -56,7 +57,7 @@ int main(int argc, char const *argv[])
       return 0;
     }
 */
-    while((errcheck = letsconnect(sock2, serv_addr, serverip, 1)) < 0){
+    while((errcheck = letsconnect(sock2, serv_addr2, serverip, 1)) < 0){
 
     }
 
