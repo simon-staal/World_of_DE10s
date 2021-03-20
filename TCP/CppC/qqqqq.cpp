@@ -11,7 +11,10 @@
 #include <vector>
 
 #define PORT 8080
-#define PORT2 8081
+#define PORTT 8081
+#define O_NONBLOCK
+
+
 
 int arraycompare(char a[128], char b[128]);
 void copyarray(char a[128], char b[128]);
@@ -35,7 +38,7 @@ int main(int argc, char const *argv[])
     char uIN[128] = {0};
     char copybuffer[128] = {0};
     char emptybuffer[128] = {0};
-    std::vector<std::pair<std::string, int>> connections;
+    std::vector<std::pair<std::string, int>> connections, connections2;
     std::string msg;
 
     std::pair<std::string, int> defaultcon;
@@ -45,25 +48,29 @@ int main(int argc, char const *argv[])
     initialiseserver(server_fd2, address2, 1);
 
 
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < 2; i++){
       connections.push_back(acceptnewcon(server_fd, defaultcon, address));
     }
 
-    
-
-    if( ( errcheck = checkconnections(connections, unityIN, player1IN, player2IN)) < 0){
-      std::cout << ":(" << std::endl;
-    }else{
-      std::cout << "Connections Configured. It's going alright!" << std::endl;
+    for(int i = 0; i < 2; i++){
+      connections2.push_back(acceptnewcon(server_fd2, defaultcon, address2));
     }
-
-    std::cout << "Player1 " << player1IN << std::endl << "Player2 " << player2IN << std::endl << "Unity " << unityIN << std::endl;
 
 
 
     while(1){
 
-      valread = read(player1IN , p1IN, 128);
+
+        valread = read(connections[0].second, p1IN, 128);
+        std::cout << "Read p1 " << p1IN << std::endl;
+        valread = read(connections[1].second, p2IN, 128);
+        std::cout << "Read p2 " << p2IN << std::endl;
+        send(connections2[1].second, p1IN, 128, 0);
+        send(connections2[0].second, p2IN, 128, 0);
+
+
+/*
+      valread = read(connections[1].second , p1IN, 128);
       std::cout << "Read from Player1 " << p1IN << std::endl;
       msg = p1IN;
       write(unityIN , msg.c_str() , strlen(msg.c_str())  );
@@ -74,7 +81,7 @@ int main(int argc, char const *argv[])
       msg = p2IN;
       write(unityIN , msg.c_str() , strlen(msg.c_str())  );
       std::cout << "Sent to Unity" << std::endl;
-
+*/
     }
 
 }
@@ -131,10 +138,10 @@ void initialiseserver(int &server_fd, sockaddr_in &address, int a){
 
    address.sin_family = AF_INET;
    address.sin_addr.s_addr = INADDR_ANY;
-   if(a = 0){
+   if(a == 0){
      address.sin_port = htons( PORT );
    }else{
-     address.sin_port = htons( PORT2 );
+     address.sin_port = htons( PORTT );
 
    }
 
