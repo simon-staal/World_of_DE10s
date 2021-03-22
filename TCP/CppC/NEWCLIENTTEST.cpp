@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     struct sockaddr_in serv_addr;
     char buffer[128] = {0};
     char copybuffer[128] = {0};
-    std::string serverip = "127.0.0.1";
+    std::string serverip = "52.56.73.213";
     std::string whoiam = "Player";
     if(argc == 2){
       serverip = argv[1];
