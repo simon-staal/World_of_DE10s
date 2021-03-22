@@ -39,7 +39,7 @@ int main(int argc, char const *argv[])
     char copybuffer[128] = {0};
     char emptybuffer[128] = {0};
     std::vector<std::pair<std::string, int>> connections;
-    std::string msg;
+    std::string msg1, msg2;
 
     std::pair<std::string, int> defaultcon;
 
@@ -60,29 +60,33 @@ int main(int argc, char const *argv[])
 
     std::cout << "Player1 " << player1 << std::endl << "Player2 " << player2 << std::endl << "Unity " << unity << std::endl;
 
-    std::string tmp, toP1, toP2;
+    std::string tmp, toP1, toP2, temp;
 
     while(1){
 
       cleararray(p1IN);
       cleararray(p2IN);
       cleararray(uIN);
+      temp = "";
 
       valread = recv(player1 , p1IN, 128, MSG_DONTWAIT);
       if( strcmp(p1IN, emptybuffer) ){
         std::cout << "Read from Player1 " << p1IN << std::endl;
         tmp = p1IN;
-        msg = "z" + tmp;
-        send(unity , msg.c_str() , strlen(msg.c_str()), 0 );
-        std::cout << "Sent to Unity" << std::endl;
+        msg1 = "z" + tmp;
       }
 
       valread = recv(player2 , p2IN, 128, MSG_DONTWAIT);
       if( strcmp(p2IN, emptybuffer) ){
         std::cout << "Read from Player2 " << p2IN << std::endl;
         tmp = p2IN;
-        msg = "x" + tmp;
-        send(unity , msg.c_str() , strlen(msg.c_str()), 0 );
+        msg2 = "x" + tmp;
+      }
+
+      temp = msg1 + msg2;
+
+      if(!temp.empty()){
+        send(unity , temp.c_str() , strlen(temp.c_str()), 0 );
         std::cout << "Sent to Unity" << std::endl;
       }
 
@@ -238,8 +242,9 @@ int checkconnections(std::vector<std::pair<std::string, int>> connections, int &
 
     std::string name = connections[i].first;
     int connumber = connections[i].second;
+    char name2 = name.at(0);
 
-    if(name == "Unity"){
+    if(name2 == 'U'){
       if(a == 0){
         std::cout << "Unity Assigned" << std::endl;
         u = connumber;
