@@ -7,14 +7,16 @@
 #include <string>
 #include <iostream>
 
-#include "conio.h"
-
 #define PORT 8080
+#define O_NONBLOCK
+
 
 int arraycompare(char a[128], char b[128]);
 void copyarray(char a[128], char b[128]);
 void sockIt(int &sock);
 int letsconnect(int sock, sockaddr_in &serv_addr, std::string serverip);
+void cleararray(char a[128]);
+
 
 int main(int argc, char const *argv[])
 {
@@ -23,12 +25,10 @@ int main(int argc, char const *argv[])
     char buffer[128] = {0};
     char copybuffer[128] = {0};
     std::string serverip = "127.0.0.1";
-    std::string whoiam = "Unity";
+    std::string whoiam = "Player";
     if(argc == 2){
       serverip = argv[1];
     }
-
-    std::string sendmsg[32] = { "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w", "w" };
 
     std::string msg;
 
@@ -47,14 +47,17 @@ int main(int argc, char const *argv[])
 
 
     while(1){
-/*
-        if(kbhit()){
-          msg = getchar();
-          send(sock , msg.c_str() , strlen(msg.c_str()) , 0 );
-          std::cout << msg << " Sent" << std::endl;
-        }
-*/
-        valread = read(sock , buffer, 128);
+
+        cleararray(buffer);
+
+        std::cin >> msg;
+        send(sock , msg.c_str() , strlen(msg.c_str()) , 0 );
+        std::cout << msg << " Sent" << std::endl;
+
+
+
+
+        valread = recv(sock , buffer, 128, MSG_DONTWAIT);
         std::cout << "Received " << buffer << std::endl;
 
     }
@@ -63,6 +66,15 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+
+void cleararray(char a[128]){
+
+  for(int i = 0; i < 128; i++){
+    a[i] = '\0';
+  }
+
+  return;
+}
 
 
 int arraycompare(char a[128], char b[128]){
