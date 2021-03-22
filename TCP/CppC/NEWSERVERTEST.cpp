@@ -68,26 +68,28 @@ int main(int argc, char const *argv[])
       cleararray(p2IN);
       cleararray(uIN);
       temp = "";
+      msg1 = "";
+      msg2 = "";
 
       valread = recv(player1 , p1IN, 128, MSG_DONTWAIT);
       if( strcmp(p1IN, emptybuffer) ){
         std::cout << "Read from Player1 " << p1IN << std::endl;
         tmp = p1IN;
-        msg1 = "z" + tmp;
+        msg1 = tmp;
       }
 
       valread = recv(player2 , p2IN, 128, MSG_DONTWAIT);
       if( strcmp(p2IN, emptybuffer) ){
         std::cout << "Read from Player2 " << p2IN << std::endl;
         tmp = p2IN;
-        msg2 = "x" + tmp;
+        msg2 = tmp;
       }
 
-      temp = msg1 + msg2;
 
-      if(!temp.empty()){
+      if( !msg1.empty() | !msg2.empty() ){
+        temp = "z" + msg1 + "x" + msg2;
         send(unity , temp.c_str() , strlen(temp.c_str()), 0 );
-        std::cout << "Sent to Unity" << std::endl;
+        std::cout << "Sent to Unity " << temp << std::endl;
       }
 
       valread = recv(unity , uIN, 128, MSG_DONTWAIT);
