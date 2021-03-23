@@ -1,6 +1,8 @@
 import subprocess
 import time
 import socket
+import threading
+import sys
 
 def process_directions(x, y):
     radius = 50
@@ -35,23 +37,50 @@ def send_on_jtag(cmd):
 
     # Returns the current x coordinate
     x = vals[1].strip()
+    # print ("x captured")
+    if x == "o"  :
+    #    print("shooting")
+        return x
+    elif x == "p" :
+    #    print("bombing")
+        return x
+    else :
+        y = vals[3].strip()
+        return process_directions(int(x), int(y))
     # Returns the current y coordinate
-    y = vals[3].strip()
+    #y = vals[3].strip()
 
-    // print(vals[4].strip())
+    # print(vals[4].strip())
 
     # To store past values, pass a vector or something which
     #   is continually updated with the previous x and y values
 
-    print(process_directions(int(x), int(y)))
+    #output_char = process_directions(int(x), int(y))
     
+# def recv_msg():
+#     recv_msg = conn.recv(128)
+#     if not recv_msg:
+#         sys.exit(0)
+#     recv_msg = recv_msg.decode()
+#     return recv_msg
+
+# def send_msg(cmd):
+#     send_msg = cmd
+#     send_msg = send_msg.encode()
+#     conn.send(send_msg)
 
 def main():
 
+        # Testing NIOS II to Ecplise by just printing to the terminal
     cmd = 'z'
-    while 1:
-        send_on_jtag(cmd)
-        # SALMAN'S CODE
+    #while 1:
+    #    send_on_jtag(cmd)
+        
+        # ---------- Receiving info from the server ----------
+
+
+        # ------------------ SALMAN'S CODE -------------------
+        # Sending information to the server
     #localhost in IPv4 interface
     HOST = '52.56.73.213'
     #int with port number from 1-65535
@@ -65,14 +94,26 @@ def main():
     # int(input("Input 1 to start process: "))
     #   Can use this to commence the game
 
+    word = "Player"
     s.connect((HOST, PORT))
+    s.send(bytes(word,"utf-8"))
 
+    # print("Connected")
+
+    initial_cmd = s.recv(128)
+    print(initial_cmd.decode("utf-8"))
+
+    # s.setblocking(false)
+    s.setblocking(0)
     while(state==1):
+
+        # cmd = s.recv(128)
+        # Grab the output character from the NIOS II terminal
         msg = send_on_jtag(cmd)
         #input("Input message you would like to send: ")
         s.send(bytes(msg,"utf-8"))
         #recieve the stream of data and decide how big of chunks of data want to recieve at a time
-        #msg = s.recv(65532)
+        # msg = s.recv(65532)
         #print(msg.decode("utf-8"))
         # state = int(input("Type 1 to send another message, else type ANYTHING: "))
     
