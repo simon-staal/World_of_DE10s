@@ -91,17 +91,14 @@ int main(int argc, char const *argv[])
         std::cout << "Read from Unity " << uIN << std::endl;
         if(uIN[0] == 'z'){
           toP1 = uIN[1];
+          send(player1 , toP1.c_str() , strlen(toP1.c_str()), 0 );
+
         }else if(uIN[0] == 'x'){
           toP2 = uIN[1];
+          send(player2 , toP2.c_str() , strlen(toP2.c_str()), 0 );
+
         }
 
-        if( uIN[2] == 'z'){
-          toP1 = uIN[3];
-        }else if( uIN[2] == 'x'){
-          toP2 = uIN[3];
-        }
-        send(player1 , toP1.c_str() , strlen(toP1.c_str()), 0 );
-        send(player2 , toP2.c_str() , strlen(toP2.c_str()), 0 );
       }
     }
 
