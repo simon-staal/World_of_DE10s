@@ -15,20 +15,20 @@ char activegame(FILE* fp, alt_32 x, alt_32 y)
 
 	if((abs(x) > abs(y)) && (abs(x) > radius)){
 		if(x > 0){
-		   	fprintf(fp, "<--> A <--> \n");
+		   	fprintf(fp, "<--> a <--> \n %c", 0x4);
 		}else{
-		   	fprintf(fp, "<--> D <--> \n");
+		   	fprintf(fp, "<--> d <--> \n %c", 0x4);
 		}
 	}else if(abs(y) > radius){
 		if( y > 0){
-			fprintf(fp, "<--> S <--> \n");
+			fprintf(fp, "<--> s <--> \n %c", 0x4);
 		}else{
-			fprintf(fp, "<--> W <--> \n");
+			fprintf(fp, "<--> w <--> \n %c", 0x4);
 		}
 	}else{
-		fprintf(fp, "<--> No movement <--> \n");
+		fprintf(fp, "<--> No movement <--> \n %c", 0x4); // adjust for no movement button for P1
 	}
-	fprintf(fp, "<--> END <--> \n %c", 0x4);
+	// fprintf(fp, "<--> END <--> \n %c", 0x4);
 }
 
 int main()

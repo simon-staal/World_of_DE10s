@@ -8,23 +8,34 @@ def send_on_jtag(cmd):
     # assert len(cmd)==1, "Please make the cmd a single character"
 
     # Input character is sent to the NIOS II terminal.
+    inputTimeStart = time.perf_counter()
     inputCmd = 'nios2-terminal.exe <<< {}'.format(cmd);
+    inputTimeEnd = time.perf_counter()
+    inputTimeDif = inputTimeEnd - inputTimeStart
+    print("Sending character to NIOS II terminal : ", inputTimeDif, " seconds")
 
     # Stores the output from the NIOS II terminal
+    outputTimeStart = time.perf_counter()
     output = subprocess.run(inputCmd, shell=True, executable='/bin/bash', stdout=subprocess.PIPE)
+    outputTimeEnd = time.perf_counter()
+    outputTimeDif = outputTimeEnd - outputTimeStart
+    print("Retrieving character from NIOS II terminal : ", outputTimeDif, " seconds")
 
     # Processing of output strings from NIOS II.
+    processingTimeStart = time.perf_counter()
     vals = output.stdout
     vals = vals.decode("utf-8")
     vals = vals.split('<-->')
-    i = 1
-    #while i < 500 :
-    print(vals[1].strip())
-    # print(vals[3].strip())
+    processingTimeEnd = time.perf_counter()
+    processingTimeDif = processingTimeEnd - processingTimeStart
+    print("Processing the output from the NIOS II terminal : ", processingTimeDif, " seconds")
 
-        # print(vals[2].strip())
-    #    time.sleep(0.001)
-    #    i+=1
+    i = 1
+    while i < 20 :
+        print(vals[i].strip())
+        #time.sleep(0.001)
+        i+=1
+
     # print("End")
         
 # Decreasing time between prints along with time between fprints.
@@ -57,12 +68,16 @@ def send_on_jtag(cmd):
 # BR : -100, 60
 
 def main():
+    start_time = time.time()
+
     cmd = 's'
-    while 1:
+    start_time = time.perf_counter()
         # print("Python while loop running")
-        send_on_jtag(cmd) # continually send the command into Eclipse
-        #time.sleep(1)
-        #print(res)
-    
+    # while 1:
+    send_on_jtag(cmd) # continually send the command into Eclipse
+    current_time = time.perf_counter()
+    total_elapsed_time = current_time - start_time
+    print("Total send_on_jtag time: ", elapsed_time, "seconds")
+
 if __name__ == '__main__':
     main()
