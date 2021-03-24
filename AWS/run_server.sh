@@ -26,24 +26,25 @@ if [[ ${KEY} =~ $WS ]]; then
   exit 1
 fi
 
-echo "###########################"
+# Formatting
+TERMINAL_WIDTH=$(tput cols)
+SEP=$(echo $(printf '=%.0s' $(eval "echo {1.."$(($TERMINAL_WIDTH))"}")))
+
+echo "$SEP"
 echo "Connecting to server instance"
 ssh -A -i ${KEY} ubuntu@${1} << EOF
   set -euo pipefail
   echo "Connection successful"
 
-  echo "###########################"
+  echo "$SEP"
   echo "Installing packages"
   sudo apt update
   sudo apt -y install g++
-  sudo apt -y install make
-  sudo apt -y install flex
   echo "Packages installed successfully"
 
-  echo "###########################"
+  echo "$SEP"
   echo "Building project"
-  if [ -d "InfoProc_Project" ]
-  then
+  if [[ -d "InfoProc_Project" ]]; then
     cd InfoProc_Project
     git pull origin master
     cd
@@ -52,12 +53,12 @@ ssh -A -i ${KEY} ubuntu@${1} << EOF
   fi
   echo "Most recent version obtained"
 
-  echo "###########################"
+  echo "$SEP"
   echo "Launching TCP server"
   g++ InfoProc_Project/TCP/CppC/TCPServer.cpp -o server
   ./server
 
-  echo "###########################"
+  echo "$SEP"
   echo "Cleaning"
   rm server
 EOF
