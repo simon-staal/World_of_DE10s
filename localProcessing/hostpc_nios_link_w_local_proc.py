@@ -8,16 +8,16 @@ def process_directions(x, y):
     radius = 50
     if abs(x) > abs(y) and abs(x) > radius:
 	    if x > 0:
-	        return "j"
+	        return "a" # move left
 	    else:
-	        return "l"
+	        return "d" # move right
     elif abs(y) > radius:
 	    if y > 0:
-		    return "k"
+		    return "s" # move down
 	    else:
-		    return "i"
+		    return "w" # move up
     else:
-	    return "q"
+	    return "q" # no movement
 
 # Function used to send information to the board.
 # This function takes an input character which is passed into the
@@ -26,22 +26,20 @@ def send_on_jtag(cmd):
     # assert len(cmd)==1, "Please make the cmd a single character"
 
     inputCmd = 'nios2-terminal.exe <<< {}'.format(cmd);
-    
+
     output = subprocess.run(inputCmd, shell=True, executable='/bin/bash', stdout=subprocess.PIPE)
-        
+
     vals = output.stdout
     vals = vals.decode("utf-8")
     vals = vals.split('<-->')
-    # Used to handle outputs other than coordinates
-    # vals2 = vals.split('<||>')
 
     # Returns the current x coordinate
     x = vals[1].strip()
     # print ("x captured")
-    if x == "o"  :
+    if x == "e"  :
     #    print("shooting")
         return x
-    elif x == "p" :
+    elif x == "r" :
     #    print("bombing")
         return x
     else :
@@ -56,28 +54,20 @@ def send_on_jtag(cmd):
     #   is continually updated with the previous x and y values
 
     #output_char = process_directions(int(x), int(y))
-    
-# def recv_msg():
-#     recv_msg = conn.recv(128)
-#     if not recv_msg:
-#         sys.exit(0)
-#     recv_msg = recv_msg.decode()
-#     return recv_msg
 
-# def send_msg(cmd):
-#     send_msg = cmd
-#     send_msg = send_msg.encode()
-#     conn.send(send_msg)
 
 def main():
 
         # Testing NIOS II to Ecplise by just printing to the terminal
+    # cmd - variable we send to eclipse
+    # msg - variable we receive from eclipse
+
     cmd = 'z'
     #while 1:
     #    send_on_jtag(cmd)
-        
-        # ---------- Receiving info from the server ----------
 
+        # ---------- Receiving info from the server ----------
+    # while there is not a character being received from the server, just send an 's'
 
         # ------------------ SALMAN'S CODE -------------------
         # Sending information to the server
@@ -90,7 +80,7 @@ def main():
     #AF_INET is the Internet address family for IPv4.
     #SOCK_STREAM is the socket type for TCP (protocol that will be used)
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    state = 1
+    #state = 1
     # int(input("Input 1 to start process: "))
     #   Can use this to commence the game
 
@@ -105,18 +95,25 @@ def main():
 
     # s.setblocking(false)
     s.setblocking(0)
-    while(state==1):
-
-        # cmd = s.recv(128)
+    while True:
+        #cmd = s.recv(128)
         # Grab the output character from the NIOS II terminal
         msg = send_on_jtag(cmd)
-        #input("Input message you would like to send: ")
         s.send(bytes(msg,"utf-8"))
-        #recieve the stream of data and decide how big of chunks of data want to recieve at a time
-        # msg = s.recv(65532)
-        #print(msg.decode("utf-8"))
-        # state = int(input("Type 1 to send another message, else type ANYTHING: "))
-    
+        try:
+            cmd = s.recv(4096)
+            cmd = cmd.decode()
+        except socket.error:
+            err = e.args[0]
+            if err == errno.EAGAIN or err == errno.EWOULDBLOCK:
+                continue
+            else:
+                # an not expected exception thrown
+                sys.exit(1)
+        #else:
+            #send_on_jtag(cmd)
+            #print(recmsg)
+
     s.close()
 
 if __name__ == '__main__':
