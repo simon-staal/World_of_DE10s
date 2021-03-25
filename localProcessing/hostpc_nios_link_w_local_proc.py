@@ -55,17 +55,6 @@ def send_on_jtag(cmd):
 
     #output_char = process_directions(int(x), int(y))
 
-# def recv_msg():
-#     recv_msg = conn.recv(128)
-#     if not recv_msg:
-#         sys.exit(0)
-#     recv_msg = recv_msg.decode()
-#     return recv_msg
-
-# def send_msg(cmd):
-#     send_msg = cmd
-#     send_msg = send_msg.encode()
-#     conn.send(send_msg)
 
 def main():
 
@@ -117,12 +106,9 @@ def main():
         except socket.error:
             err = e.args[0]
             if err == errno.EAGAIN or err == errno.EWOULDBLOCK:
-                #sleep(1)
-                #print("No data available")
                 continue
             else:
-                # a "real" error occurred
-                #print(e)
+                # an not expected exception thrown
                 sys.exit(1)
         #else:
             #send_on_jtag(cmd)
