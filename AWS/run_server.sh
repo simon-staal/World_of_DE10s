@@ -55,7 +55,7 @@ ssh -A -i ${KEY} ubuntu@${1} << EOF
 
   echo "$SEP"
   echo "Launching TCP server"
-  g++ InfoProc_Project/TCP/CppC/TCPServer.cpp -o server
+  g++ InfoProc_Project/TCP/CppC/NEWSERVERTEST.cpp -o server
   ./server
 
   echo "$SEP"
