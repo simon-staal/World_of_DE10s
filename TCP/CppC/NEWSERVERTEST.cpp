@@ -60,6 +60,8 @@ int main(int argc, char const *argv[])
 
     std::cout << "Player1 " << player1 << std::endl << "Player2 " << player2 << std::endl << "Unity " << unity << std::endl;
 
+
+
     std::string tmp, toP1, toP2;
 
     while(1){
@@ -92,10 +94,11 @@ int main(int argc, char const *argv[])
         if(uIN[0] == 'z'){
           toP1 = uIN[1];
           send(player1 , toP1.c_str() , strlen(toP1.c_str()), 0 );
-
+          std::cout << "Sent to Player1" << std::endl;
         }else if(uIN[0] == 'x'){
           toP2 = uIN[1];
           send(player2 , toP2.c_str() , strlen(toP2.c_str()), 0 );
+          std::cout << "Sent to Player2" << std::endl;
 
         }
 
