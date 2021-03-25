@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+# IP address
 if [[ $# -eq 0 ]] ; then
     >&2 echo "Usage: ./run_server.sh <IP>"
     >&2 echo "<IP> is the IP of the instance being connected to"
@@ -55,7 +56,7 @@ ssh -A -i ${KEY} ubuntu@${1} << EOF
 
   echo "$SEP"
   echo "Launching TCP server"
-  g++ InfoProc_Project/TCP/CppC/NEWSERVERTEST.cpp -o server
+  g++ InfoProc_Project/TCP/CppC/Server.cpp -o server
   ./server
 
   echo "$SEP"
