@@ -40,6 +40,7 @@ int main(int argc, char const *argv[])
     char emptybuffer[128] = {0};
     std::vector<std::pair<std::string, int>> connections;
     std::string msg;
+    std::string ready = "ready";
 
     std::pair<std::string, int> defaultcon;
 
@@ -59,6 +60,10 @@ int main(int argc, char const *argv[])
     }
 
     std::cout << "Player1 " << player1 << std::endl << "Player2 " << player2 << std::endl << "Unity " << unity << std::endl;
+
+    send(unity , ready.c_str() , strlen(ready.c_str()), 0 );
+    send(player1 , ready.c_str() , strlen(ready.c_str()), 0 );
+    send(player2 , ready.c_str() , strlen(ready.c_str()), 0 );
 
 
 
