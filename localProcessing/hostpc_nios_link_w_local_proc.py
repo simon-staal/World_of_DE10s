@@ -26,9 +26,9 @@ def send_on_jtag(cmd):
     # assert len(cmd)==1, "Please make the cmd a single character"
 
     inputCmd = 'nios2-terminal.exe <<< {}'.format(cmd);
-    
+
     output = subprocess.run(inputCmd, shell=True, executable='/bin/bash', stdout=subprocess.PIPE)
-        
+
     vals = output.stdout
     vals = vals.decode("utf-8")
     vals = vals.split('<-->')
@@ -54,7 +54,7 @@ def send_on_jtag(cmd):
     #   is continually updated with the previous x and y values
 
     #output_char = process_directions(int(x), int(y))
-    
+
 # def recv_msg():
 #     recv_msg = conn.recv(128)
 #     if not recv_msg:
@@ -72,11 +72,11 @@ def main():
         # Testing NIOS II to Ecplise by just printing to the terminal
     # cmd - variable we send to eclipse
     # msg - variable we receive from eclipse
-    
+
     cmd = 'z'
     #while 1:
     #    send_on_jtag(cmd)
-        
+
         # ---------- Receiving info from the server ----------
     # while there is not a character being received from the server, just send an 's'
 
@@ -91,7 +91,7 @@ def main():
     #AF_INET is the Internet address family for IPv4.
     #SOCK_STREAM is the socket type for TCP (protocol that will be used)
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    state = 1
+    #state = 1
     # int(input("Input 1 to start process: "))
     #   Can use this to commence the game
 
@@ -106,13 +106,28 @@ def main():
 
     # s.setblocking(false)
     s.setblocking(0)
-    while(state==1):
-
-        # cmd = s.recv(128)
+    while True:
+        #cmd = s.recv(128)
         # Grab the output character from the NIOS II terminal
         msg = send_on_jtag(cmd)
         s.send(bytes(msg,"utf-8"))
-    
+        try:
+            cmd = s.recv(4096)
+            cmd = cmd.decode()
+        except socket.error:
+            err = e.args[0]
+            if err == errno.EAGAIN or err == errno.EWOULDBLOCK:
+                #sleep(1)
+                #print("No data available")
+                continue
+            else:
+                # a "real" error occurred
+                #print(e)
+                sys.exit(1)
+        #else:
+            #send_on_jtag(cmd)
+            #print(recmsg)
+
     s.close()
 
 if __name__ == '__main__':
