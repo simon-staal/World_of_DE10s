@@ -95,8 +95,8 @@ def main():
     word = "Player"
     s.send(bytes(word,"utf-8"))
 
-    # Avoids errors from sending and receiving information to the server at
-    # the same time
+    # Make socket non-blocking 
+    # Allows send and recv to return without having done anything
     s.setblocking(0)
 
     #           --- Connecting the stream of information from the server to NIOS II ---
@@ -123,7 +123,7 @@ def main():
         except socket.error as e:
             err = e.args[0]
             if err == errno.EAGAIN or err == errno.EWOULDBLOCK:
-                continue # continue if you get an expected error
+                continue # can continue if you get an expected error
             else:
                 # a unexpected error occurred
                 sys.exit(1)
