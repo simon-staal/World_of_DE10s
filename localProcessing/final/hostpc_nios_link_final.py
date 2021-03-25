@@ -57,18 +57,6 @@ def send_on_jtag(cmd):
 
     #output_char = process_directions(int(x), int(y))
 
-# def recv_msg():
-#     recv_msg = conn.recv(128)
-#     if not recv_msg:
-#         sys.exit(0)
-#     recv_msg = recv_msg.decode()
-#     return recv_msg
-
-# def send_msg(cmd):
-#     send_msg = cmd
-#     send_msg = send_msg.encode()
-#     conn.send(send_msg)
-
 def main():
 
         # Testing NIOS II to Ecplise by just printing to the terminal
@@ -93,10 +81,6 @@ def main():
     #AF_INET is the Internet address family for IPv4.
     #SOCK_STREAM is the socket type for TCP (protocol that will be used)
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    # fcntl.fcntl(s, fcntl.F_SETFL, os.O_NONBLOCK)
-    #state = 1
-    # int(input("Input 1 to start process: "))
-    #   Can use this to commence the game
 
 
     word = "Player"
@@ -117,20 +101,14 @@ def main():
         try:    # try to receive a character from the stream
             cmd = s.recv(128)
             cmd = cmd.decode()
-            # if nothing is received, run the 'except' bit
-        except socket.error as e: 
+            # if nothing is received, run the 'except' bit to not abort
+        except socket.error as e:
             err = e.args[0]
             if err == errno.EAGAIN or err == errno.EWOULDBLOCK:
-                #sleep(1)
-                #print("No data available")
-                continue # continue if you get an error
+                continue # continue if you get an expected error
             else:
-                # a "real" error occurred
-                #print(e)
+                # a unexpected error occurred
                 sys.exit(1)
-        #else:
-            #send_on_jtag(cmd)
-            #print(recmsg)
 
     s.close()
 
