@@ -9,8 +9,29 @@
 #include <stdlib.h>
 #include <sys/alt_stdio.h>
 
-char activegame(FILE* fp, alt_32 x, alt_32 y)
+/*
+void bomb(FILE* fp){
+	int switch_datain= ~IORD_ALTERA_AVALON_PIO_DATA(BUTTON_BASE);
+	// switch_datain &= (0b0000000001); // Button 1
+
+		// Currently with how this is set up, you are going to replace one
+	//			second of potential movement for shooting
+	if(switch_datain == (0b01) || switch_datain == (0b11)){
+		fprintf(fp, "<--> o <--> \n %c", 0x4);
+	}
+}
+*/
+
+void activegame(FILE* fp, alt_32 x, alt_32 y)
 {
+	int switch_datain= ~IORD_ALTERA_AVALON_PIO_DATA(BUTTON_BASE);
+	switch_datain &= 0b11;
+
+	// fprintf(fp, "<--> %d <--> \n %c", switch_datain, 0x4);
+
+	if(switch_datain == 1 || switch_datain == 2){
+		fprintf(fp, "<--> o <--> \n %c", 0x4);
+	}
     alt_32 radius = 50;
 
 	if((abs(x) > abs(y)) && (abs(x) > radius)){
@@ -77,4 +98,4 @@ int main()
 	printf("Complete\n");
 
 	return 0;
-} 
+}
