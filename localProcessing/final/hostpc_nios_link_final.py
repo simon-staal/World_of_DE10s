@@ -28,7 +28,8 @@ def process_directions(x, y):
 #   This function takes an input character and sends it to the NIOS II terminal. It then reads
 #   the reply printed to the NIOS II terminal and handles the relevant data.
 def send_on_jtag(cmd):
-    assert len(cmd)==1, "Please make the cmd a single character"
+    print(cmd)
+    # assert len(cmd)==1, "Please make the cmd a single character"
 
     # command we will run to send information to the NIOS II terminal
     inputCmd = 'nios2-terminal.exe <<< {}'.format(cmd);
