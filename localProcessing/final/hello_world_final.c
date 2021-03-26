@@ -74,7 +74,7 @@ void print_loser(){
 //	usleep(1000000);
 //	// 0
 //	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b1000000);
-//}
+//
 
 int main()
 {
