@@ -28,7 +28,8 @@ def process_directions(x, y):
 #   This function takes an input character and sends it to the NIOS II terminal. It then reads
 #   the reply printed to the NIOS II terminal and handles the relevant data.
 def send_on_jtag(cmd):
-    assert len(cmd)==1, "Please make the cmd a single character"
+    print(cmd)
+    # assert len(cmd)==1, "Please make the cmd a single character"
 
     # command we will run to send information to the NIOS II terminal
     inputCmd = 'nios2-terminal.exe <<< {}'.format(cmd);
@@ -72,7 +73,7 @@ def main():
 
     #           --- Establishing a connection with the server ---
     # localhost in IPv4 interface
-    HOST = '52.56.73.213'
+    HOST = '52.56.78.234'
     # int with port number from 1-65535
     PORT = 8080
 
