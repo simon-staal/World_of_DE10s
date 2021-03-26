@@ -45,6 +45,11 @@ int main(int argc, char const *argv[])
     send(sock , whoiam.c_str() , strlen(whoiam.c_str()) , 0);
     std::cout << "ID Sent" << std::endl;
 
+    cleararray(buffer);
+
+    valread = read(sock , buffer, 128);
+    std::cout << buffer << std::endl;
+
 
     while(1){
 

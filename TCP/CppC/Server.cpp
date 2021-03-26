@@ -40,6 +40,7 @@ int main(int argc, char const *argv[])
     char emptybuffer[128] = {0};
     std::vector<std::pair<std::string, int>> connections;
     std::string msg;
+    std::string ready = "ready";
 
     std::pair<std::string, int> defaultcon;
 
@@ -59,6 +60,12 @@ int main(int argc, char const *argv[])
     }
 
     std::cout << "Player1 " << player1 << std::endl << "Player2 " << player2 << std::endl << "Unity " << unity << std::endl;
+
+    send(unity , ready.c_str() , strlen(ready.c_str()), 0 );
+    send(player1 , ready.c_str() , strlen(ready.c_str()), 0 );
+    send(player2 , ready.c_str() , strlen(ready.c_str()), 0 );
+
+
 
     std::string tmp, toP1, toP2;
 
@@ -89,13 +96,23 @@ int main(int argc, char const *argv[])
       valread = recv(unity , uIN, 128, MSG_DONTWAIT);
       if( strcmp(uIN, emptybuffer) ){
         std::cout << "Read from Unity " << uIN << std::endl;
-        if(uIN[0] == 'z'){
+        if(uIN[0] == 'r'){
+          toP1 = uIN[0];
+          toP2 = uIN[0];
+          send(player1 , toP1.c_str() , strlen(toP1.c_str()), 0 );
+          std::cout << "Sent to Player1" << std::endl;
+          send(player2 , toP2.c_str() , strlen(toP2.c_str()), 0 );
+          std::cout << "Sent to Player2" << std::endl;
+
+        }else if(uIN[0] == 'z'){
           toP1 = uIN[1];
           send(player1 , toP1.c_str() , strlen(toP1.c_str()), 0 );
+          std::cout << "Sent to Player1" << std::endl;
 
         }else if(uIN[0] == 'x'){
           toP2 = uIN[1];
           send(player2 , toP2.c_str() , strlen(toP2.c_str()), 0 );
+          std::cout << "Sent to Player2" << std::endl;
 
         }
 

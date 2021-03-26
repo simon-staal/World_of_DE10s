@@ -95,6 +95,9 @@ def main():
     word = "Player"
     s.send(bytes(word,"utf-8"))
 
+    second_cmd = s.recv(128)
+    print(second_cmd.decode("utf-8"))
+
     # Make socket non-blocking 
     # Allows send and recv to return without having done anything
     s.setblocking(0)
