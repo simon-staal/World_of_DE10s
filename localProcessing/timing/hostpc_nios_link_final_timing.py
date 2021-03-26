@@ -32,15 +32,27 @@ def send_on_jtag(cmd):
     # assert len(cmd)==1, "Please make the cmd a single character"
 
     # command we will run to send information to the NIOS II terminal
+    inputTimeStart = time.perf_counter()
     inputCmd = 'nios2-terminal.exe <<< {}'.format(cmd);
+    inputTimeEnd = time.perf_counter()
+    inputTimeDif = inputTimeEnd - inputTimeStart
+    print("Sending character to NIOS II terminal : ", inputTimeDif, " seconds")
 
     # running the command and capturing the result from the NIOS II terminal in the variable output
+    outputTimeStart = time.perf_counter()
     output = subprocess.run(inputCmd, shell=True, executable='/bin/bash', stdout=subprocess.PIPE)
+    outputTimeEnd = time.perf_counter()
+    outputTimeDif = outputTimeEnd - outputTimeStart
+    print("Retrieving character from NIOS II terminal : ", outputTimeDif, " seconds")
 
     # decoding and removing suffixes/prefixes from the NIOS II output
+    processingTimeStart = time.perf_counter()
     vals = output.stdout
     vals = vals.decode("utf-8")
     vals = vals.split('<-->')
+    processingTimeEnd = time.perf_counter()
+    processingTimeDif = processingTimeEnd - processingTimeStart
+    print("Processing the output from the NIOS II terminal : ", processingTimeDif, " seconds")
 
         #   Output capturing
     # vals[1].strip() indicates the first output from the NIOS II terminal and is stored in x
@@ -66,14 +78,14 @@ def send_on_jtag(cmd):
 
 
 def main():
-
+    server_connect_start = time.perf_counter()
         # Testing NIOS II to Ecplise by just printing to the terminal
     # cmd - variable we send to eclipse
     # msg - variable we receive from eclipse
 
     #           --- Establishing a connection with the server ---
     # localhost in IPv4 interface
-    HOST = '52.56.78.234'
+    HOST = '52.56.73.213'
     # int with port number from 1-65535
     PORT = 6969
 
@@ -84,6 +96,9 @@ def main():
 
     # establish connection with the server
     s.connect((HOST, PORT))
+    server_connect_end = time.perf_counter()
+    server_connect_dif = server_connect_end - server_connect_start
+    print("Total send_on_jtag time: ", server_connect_dif, "seconds")
 
     # The connection with the server must be initialised by receiving information
     # then sending (the same or different) information back
@@ -96,11 +111,10 @@ def main():
     word = "Player"
     s.send(bytes(word,"utf-8"))
 
+    # Avoids errors from sending and receiving information to the server at
+    # the same time
     second_cmd = s.recv(128)
     print(second_cmd.decode("utf-8"))
-
-    # Make socket non-blocking 
-    # Allows send and recv to return without having done anything
     s.setblocking(0)
 
     #           --- Connecting the stream of information from the server to NIOS II ---
@@ -116,18 +130,31 @@ def main():
 
     while True:
         # Grab the output character from the NIOS II terminal
+        sendonjtag_start = time.perf_counter()
         msg = send_on_jtag(cmd)
+        sendonjtag_end = time.perf_counter()
+        sendonjtag_dif = sendonjtag_end - sendonjtag_start
+        print("Total send_on_jtag time: ", sendonjtag_dif, " seconds")
+
         cmd = 's'
         # Send the received character to the server
+        send_server_start = time.perf_counter()
         s.send(bytes(msg,"utf-8"))
+        send_server_end = time.perf_counter()
+        send_server_dif = send_server_end - send_server_start
+        print("Time taken to send a char to the server : ", send_server_dif, " seconds")
         try:    # try to receive a character from the stream
+            receive_server_start = time.perf_counter()
             cmd = s.recv(128)
             cmd = cmd.decode()
+            receive_server_end = time.perf_counter()
+            receive_server_dif = receive_server_end - receive_server_start
+            print("Time taken to receive a char from the server : ", receive_server_dif, " seconds")
             # if nothing is received, run the 'except' bit to not abort
         except socket.error as e:
             err = e.args[0]
             if err == errno.EAGAIN or err == errno.EWOULDBLOCK:
-                continue # can continue if you get an expected error
+                continue # continue if you get an expected error
             else:
                 # a unexpected error occurred
                 sys.exit(1)
