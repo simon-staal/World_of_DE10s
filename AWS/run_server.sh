@@ -39,8 +39,8 @@ ssh -A -i ${KEY} ubuntu@${1} << EOF
 
   echo "$SEP"
   echo "Installing packages"
-  sudo apt update
-  sudo apt -y install g++
+  sudo apt-get update
+  sudo apt-get -y install g++
   echo "Packages installed successfully"
 
   echo "$SEP"
