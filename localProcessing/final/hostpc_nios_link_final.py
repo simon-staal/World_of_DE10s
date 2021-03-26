@@ -73,7 +73,7 @@ def main():
 
     #           --- Establishing a connection with the server ---
     # localhost in IPv4 interface
-    HOST = '52.56.73.213'
+    HOST = '52.56.78.234'
     # int with port number from 1-65535
     PORT = 8080
 
