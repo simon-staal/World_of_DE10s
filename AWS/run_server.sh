@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-# IP address
 if [[ $# -eq 0 ]] ; then
     >&2 echo "Usage: ./run_server.sh <IP>"
     >&2 echo "<IP> is the IP of the instance being connected to"
@@ -34,15 +33,14 @@ SEP=$(echo $(printf '=%.0s' $(eval "echo {1.."$(($TERMINAL_WIDTH))"}")))
 echo "$SEP"
 echo "Connecting to server instance"
 ssh -A -i ${KEY} ubuntu@${1} << EOF
+  #!/bin/bash
   set -euo pipefail
   echo "Connection successful"
-
   echo "$SEP"
   echo "Installing packages"
-  sudo apt-get update
-  sudo apt-get -y install g++
+  sudo apt update
+  sudo apt -y install g++
   echo "Packages installed successfully"
-
   echo "$SEP"
   echo "Building project"
   if [[ -d "InfoProc_Project" ]]; then
@@ -53,12 +51,10 @@ ssh -A -i ${KEY} ubuntu@${1} << EOF
     git clone git@github.com:sts219/InfoProc_Project.git
   fi
   echo "Most recent version obtained"
-
   echo "$SEP"
   echo "Launching TCP server"
   g++ InfoProc_Project/TCP/CppC/Server.cpp -o server
   ./server
-
   echo "$SEP"
   echo "Cleaning"
   rm server
