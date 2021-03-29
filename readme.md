@@ -35,4 +35,9 @@ As mentioned above, this directory contains the quartus project files and platfo
 
 [**TCP**](TCP)
 --------------
-This directory contains the c++ files used to create and test the TCP server, with the main [*Server.cpp*](TCP/Server.cpp) file being run in the AWS instance.
+This directory contains the c++ files used to create and test the TCP server, with the main [*Server.cpp*](TCP/Server.cpp) file being run in the AWS instance. The other 2 files were used to simulate the player and unity TCP clients (which were actually implemented in python and C# respectively) when developing the functionality of the TCP server.
+
+
+[**Unity**](Unity)
+------------------
+This directory contains the Unity project files for the front-end of our game, as well as a binary executable which you can use to run the game itself. All the graphical assets used are original, but we <del>stole</del> borrowed the music from DOOM Eternal (pls don't sue us, this is not a commercial product and the music sounds sick)
