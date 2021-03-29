@@ -24,7 +24,6 @@ This will require scripts that can do the following:
 *N.B. Unity scripts are included in the* [**Unity**](../Unity) *directory as part of the game project files.*
 
 
-=========================================================================================================================================
 
 Setting up and establishing the Quartus environment + Handling the Eclipse & Python connection
 ===================================================================
