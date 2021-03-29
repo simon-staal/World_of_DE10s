@@ -35,4 +35,4 @@ As mentioned above, this directory contains the quartus project files and platfo
 
 [**TCP**](TCP)
 --------------
-This directory contains the c++ files used to create and test the TCP server, with the main [*Server.cpp*](TCP/Server.cpp) file being run in 
+This directory contains the c++ files used to create and test the TCP server, with the main [*Server.cpp*](TCP/Server.cpp) file being run in the AWS instance.

@@ -53,7 +53,7 @@ ssh -A -i ${KEY} ubuntu@${1} << EOF
   echo "Most recent version obtained"
   echo "$SEP"
   echo "Launching TCP server"
-  g++ InfoProc_Project/TCP/CppC/Server.cpp -o server
+  g++ InfoProc_Project/TCP/Server.cpp -o server
   ./server
   echo "$SEP"
   echo "Cleaning"
