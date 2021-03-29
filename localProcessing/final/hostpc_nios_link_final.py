@@ -75,7 +75,7 @@ def main():
     # localhost in IPv4 interface
     HOST = '52.56.78.234'
     # int with port number from 1-65535
-    PORT = 8080
+    PORT = 6969
 
     # arguments passed to socket() specify the address family and socket type
     # AF_INET is the Internet address family for IPv4.

@@ -11,6 +11,7 @@
 
 
 void reset_hex(){
+	// Resets the 7-segment displays to show nothing
 	IOWR_ALTERA_AVALON_PIO_DATA(HEX5_BASE, 0b1111111);
 	IOWR_ALTERA_AVALON_PIO_DATA(HEX4_BASE, 0b1111111);
 	IOWR_ALTERA_AVALON_PIO_DATA(HEX3_BASE, 0b1111111);
@@ -39,43 +40,6 @@ void print_loser(){
 	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b0000110);
 }
 
-//void print_p1(){
-//	// 'P1  '
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX5_BASE, 0b0001100);
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX4_BASE, 0b1001111);
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX3_BASE, 0b1111111);
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX2_BASE, 0b1111111);
-//}
-//
-//void print_p2(){
-//	// 'P2  '
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX5_BASE, 0b0001100);
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX4_BASE, 0b0100100);
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX3_BASE, 0b1111111);
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX2_BASE, 0b1111111);
-//}
-
-//void start_countdown(){
-//	// 'Count down from 5 with HEX0'
-//	// 5
-////	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b1101110);
-////	usleep(1000000);
-////	// 4
-////	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b0011001);
-////	usleep(1000000);
-//	// 3
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b0110000);
-//	usleep(1000000);
-//	// 2
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b0100100);
-//	usleep(1000000);
-//	// 1
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b1001111);
-//	usleep(1000000);
-//	// 0
-//	IOWR_ALTERA_AVALON_PIO_DATA(HEX0_BASE, 0b1000000);
-//}
-
 int main()
 {
 	printf("Running..\n");
@@ -94,6 +58,7 @@ int main()
 	alt_up_accelerometer_spi_dev * acc_dev;
 	acc_dev = alt_up_accelerometer_spi_open_dev ("/dev/accelerometer_spi");
 
+	// Check if the SPI has been instantiated properly
 	if ( acc_dev == NULL){
 	 	printf ("Error: could not open acc device \n");
 	}else{
@@ -101,27 +66,33 @@ int main()
 	}
 
 	// Initialize board components with nothing
+	// 7-segment displays
 	reset_hex();
+	// LEDs
 	IOWR(LED_BASE, 0, 0b0000000000);
 
 	// Access stream of data through the jtag_uart in the variable fp
 	fp = fopen ("/dev/jtag_uart", "r+"); // r+ opens a file for reading and updating
 
+	// If the file path was successfully opened
 	if (fp) {
 		// 'v' is used as the character to stop the program
 		while (prompt != 'v') {
 			prompt = getc(fp);
 			//	Assign winner if their score reaches 10
-			if (prompt == 'w' || score == 0b1111111111){
+			if (score == 0b1111111111){
 				print_winner();
+				// Character with no effect to avoid error
 				fprintf(fp, "<--> q <--> \n");
+				// Keep 'U WIN' message up for 7 seconds
 				usleep(7000000);
+				// Reset the on-board components for a new round of the game
 				reset_hex();
-				// Reset the LEDs to display nothing
 				score = 0b0000000000;
 				IOWR(LED_BASE, 0, 0b0000000000);
 			//	Assign the loser if an 'l' is sent to their processor
 			}else if (prompt == 'l'){
+				// Same setup as print_winner() scope but for print_loser()
 				print_loser();
 				fprintf(fp, "<--> q <--> \n");
 				usleep(7000000);
@@ -131,24 +102,31 @@ int main()
 				IOWR(LED_BASE, 0, 0b0000000000);
 			//	Increment this processor's score after receiving an 'n'
 			}else if (prompt == 'n'){ // increment score
-				if (score == 0b0000000000){	// handling the initial value
+				// handling the initial value
+				if (score == 0b0000000000){	
 					score = 0b0000000001;
-					IOWR(LED_BASE, 0, score); // read the value into the LEDs
+					// read the value into the LEDs
+					IOWR(LED_BASE, 0, score);
 				}else{	// general case for incrementing the score
-					score <<= 1; // shifting the value to increase the visual score
-					score |= 1;	// fill the LSBs with 1s
+					// shifting the value to increase the visual score on the LEDs
+					score <<= 1;
+					// fill the LSBs with 1s
+					score |= 1;
+					// write the updated value to the LEDs
 					IOWR(LED_BASE, 0, score);
 				}
-			}else if (prompt == 'r'){ // reset the board displays
+			}else if (prompt == 'r'){ // reset the board displays, used at the start of the game
 				// Reset the 7-seg displays to nothing
 				reset_hex();
 				// Reset the LEDs to display nothing
 				score = 0b0000000000;
 				IOWR(LED_BASE, 0, 0b0000000000);
+				// Useless output characters used to output nothing
 	            fprintf(fp, "<--> 0 <--> \n");
 	            fprintf(fp, "<--> 0 <--> \n");
 			}
-					// Button management
+
+			// 		Button management
 			int button_datain= ~IORD_ALTERA_AVALON_PIO_DATA(BUTTON_BASE);
 			button_datain &= 0b11;
 
@@ -158,13 +136,16 @@ int main()
 				fprintf(fp, "<--> r <--> \n %c", 0x4);
 			}
 
-				// Read accelerometer values then print to the nios ii terminal
+				// Read accelerometer values then print to the Nios II terminal
 			// x-axis value
 			alt_up_accelerometer_spi_read_x_axis(acc_dev, &x);
             fprintf(fp, "<--> %i <--> \n", x);
             // y-axis value
 			alt_up_accelerometer_spi_read_y_axis(acc_dev, &y);
             fprintf(fp, "<--> %i <--> \n", y);
+			// Output a 0x4 to indicate the end of the character stream;
+			// same as doing CTRL + D in the NIOS II terminal. Needed to 
+			// output characters to the JTAG UART stream.
             fprintf(fp, "<--> END <--> \n %c", 0x4);
 
 		}
