@@ -16,17 +16,32 @@ public class client : MonoBehaviour
     NetworkStream theStream;
     StreamWriter theWriter;
     StreamReader theReader;
-    String Host = "52.56.73.213";
-    Int32 Port = 8080;
+    String Host = "";
+    Int32 Port = 6969;
     public bool activated = false;
     // Start is called before the first frame update
     private bool mRunning;
     public Thread mThread;
     [SerializeField] runnerCharacterController instance;
     [SerializeField] characterController instance2;
-    void Start()
-    {
+    [SerializeField] reset resett;
+    [SerializeField] time score;
 
+
+    public GameObject scriptIp;
+    Ipandportscript ipscript;
+
+
+    public bool resetted = false;
+    void Awake()
+    {
+        scriptIp = GameObject.Find("ipandport");
+        if (scriptIp != null)
+        {
+            ipscript = scriptIp.GetComponent<Ipandportscript>();
+            Host = ipscript.ip;
+            Port = Int32.Parse(ipscript.po);
+        }
         mRunning = true;
         ThreadStart ts = new ThreadStart(Receive);
         mThread = new Thread(ts);
@@ -42,6 +57,8 @@ public class client : MonoBehaviour
         String s = readSocket();
         String send = "U";
         writeSocket(send);
+        s = readSocket();
+        writeSocket("r");
         while (mRunning)
         {
             s = readSocket();  
@@ -106,35 +123,50 @@ public class client : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-     
+        if (resett.redtankout == true)
+        {
+            writeSocket("zn");
+
+            resett.redtankout = false;
+        }
+        else if (resett.greentankout == true)
+        {
+            writeSocket("xn");
+            resett.greentankout = false;
+        }
+        if (score.greenwins == true)
+        {
+            String s = readSocket();
+            s = readSocket();
+            writeSocket("xl");
+            score.greenwins = false;
+        }
+        else if (score.redwins == true)
+        {
+            String s = readSocket();
+            s = readSocket();
+            writeSocket("zl");
+            score.redwins = false;
+        }
         if (Input.GetKeyDown("."))
         {
-            writeSocket("z1");
+           // writeSocket("xl");
+            //score.greenwins = false;
             //string output = readSocket();
             //Debug.Log(output);
         }
         if (Input.GetKeyDown("/"))
         {
-            writeSocket("x1");
+            //writeSocket("zl");
         }
         if (Input.GetButtonDown("Fire3"))
         {
-            closeSocket();
+            //closeSocket();
         }
         
         
 
 
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (activated == false)
-        {
-            activated = true;
-            writeSocket("Hello Kai");
-            Debug.Log("it collides");
-        }
-        activated = false;
     }
     public void stopListening()
     {

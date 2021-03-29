@@ -9,6 +9,7 @@ TagManager:
   - chaser
   - bulletblue
   - bomb
+  - ipportsaver
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - redtank
   - bluetank
   - bomb
-  - 
+  - ipportsaver
   - 
   - 
   - 

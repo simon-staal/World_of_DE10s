@@ -26,7 +26,7 @@ public class timer_bomb : MonoBehaviour
         if (timer < 0)
         {
             var n = Instantiate(bombcollider, transform.position, Quaternion.Euler(0f, 0f, 0f));
-            transform2.localScale *= 7;
+            transform2.localScale *= 7.5f;
             n.transform.parent = gameObject.transform;
             timer = 1f;
             anim.SetFloat("speed", 2);

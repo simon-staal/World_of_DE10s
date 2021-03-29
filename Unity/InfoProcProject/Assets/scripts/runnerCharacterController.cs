@@ -31,6 +31,7 @@ public class runnerCharacterController : MonoBehaviour
     [SerializeField] GameObject fire_down;
     [SerializeField] GameObject bullet;
 
+    public bool isrunning;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,136 +45,138 @@ public class runnerCharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("RunnerHorizontal");
-        vertical = Input.GetAxisRaw("RunnerVertical");
-        //horizontal = Input.GetAxisRaw("ChaserHorizontal");
-        //vertical = Input.GetAxisRaw("ChaserVertical");
-        //fire = Input.GetKeyDown("space");
-        fire = Input.GetKeyDown("o");
-        setbomb = Input.GetKeyDown("r");
-        animator.SetBool("shot", false);
-        if (!string.IsNullOrEmpty(x))
+        if (isrunning)
         {
-            if (x[0] == 'z')
+            horizontal = Input.GetAxisRaw("RunnerHorizontal");
+            vertical = Input.GetAxisRaw("RunnerVertical");
+            //horizontal = Input.GetAxisRaw("ChaserHorizontal");
+            //vertical = Input.GetAxisRaw("ChaserVertical");
+            //fire = Input.GetKeyDown("space");
+            fire = Input.GetKeyDown("o");
+            setbomb = Input.GetKeyDown("r");
+            animator.SetBool("shot", false);
+            if (!string.IsNullOrEmpty(x))
             {
-                x2 = x[1];
+                if (x[0] == 'z')
+                {
+                    x2 = x[1];
+                }
             }
-        }
-        if (x2 == 'w')
-        {
-            vertical = 1;
-            horizontal = 0;
-        }
-        else if (x2 == 's')
-        {
-            vertical = -1;
-            horizontal = 0;
-        }
-        else if (x2 == 'a')
-        {
-            horizontal = -1;
-            vertical = 0;
-        }
-        else if (x2 == 'd')
-        {
-            horizontal = 1;
-            vertical = 0;
-        }
-        else if (x2 == 'e')
-        {
-            horizontal = 0;
-            vertical = 0;
-            fire = true;
-        }
-        else if (x2 == 'r')
-        {
-            horizontal = 0;
-            vertical = 0;
-            setbomb = true;
-        }
-        if (fire == true)
-        {
-            if (!bombed)
+            if (x2 == 'w')
             {
-                Debug.Log("here");
-                shottimer = 2f;
-                if (animator.GetCurrentAnimatorStateInfo(0).IsName("redleft"))
-                {
-                    Instantiate(fire_left, transform.position + (Vector3.left * 0.4f) + Vector3.forward, transform.rotation);
-                    Instantiate(bullet, transform.position + (Vector3.left * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 180f));
-                }
-                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("redright"))
-                {
-                    Instantiate(fire_right, transform.position + (Vector3.right * 0.4f) + Vector3.forward, transform.rotation);
-                    Instantiate(bullet, transform.position + (Vector3.right * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 0f));
-                }
-                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("reddown"))
-                {
-                    Instantiate(fire_down, transform.position + (Vector3.down * 0.4f) + Vector3.forward, transform.rotation);
-                    Instantiate(bullet, transform.position + (Vector3.down * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 270f));
-                }
-                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("redup"))
-                {
-                    Instantiate(fire_up, transform.position + (Vector3.up * 0.4f) + Vector3.forward, transform.rotation);
-                    Instantiate(bullet, transform.position + (Vector3.up * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 90f));
-                }
-                animator.SetBool("shot", true);
-                fire = false;
+                vertical = 1;
+                horizontal = 0;
             }
-            else
+            else if (x2 == 's')
             {
-                if (shottimer < 0)
+                vertical = -1;
+                horizontal = 0;
+            }
+            else if (x2 == 'a')
+            {
+                horizontal = -1;
+                vertical = 0;
+            }
+            else if (x2 == 'd')
+            {
+                horizontal = 1;
+                vertical = 0;
+            }
+            else if (x2 == 'e')
+            {
+                horizontal = 0;
+                vertical = 0;
+                fire = true;
+            }
+            else if (x2 == 'r')
+            {
+                horizontal = 0;
+                vertical = 0;
+                setbomb = true;
+            }
+            if (fire == true)
+            {
+                if (!bombed)
                 {
+                    shottimer = 2f;
                     if (animator.GetCurrentAnimatorStateInfo(0).IsName("redleft"))
                     {
-                        Instantiate(fire_left, transform.position + (Vector3.left * 0.4f) + Vector3.forward, transform.rotation);
-                        Instantiate(bullet, transform.position + (Vector3.left * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 180f));
+                        Instantiate(fire_left, transform.position + (Vector3.left * 0.5f) + Vector3.forward, transform.rotation);
+                        Instantiate(bullet, transform.position + (Vector3.left * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 180f));
                     }
                     else if (animator.GetCurrentAnimatorStateInfo(0).IsName("redright"))
                     {
-                        Instantiate(fire_right, transform.position + (Vector3.right * 0.4f) + Vector3.forward, transform.rotation);
-                        Instantiate(bullet, transform.position + (Vector3.right * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 0f));
+                        Instantiate(fire_right, transform.position + (Vector3.right * 0.5f) + Vector3.forward, transform.rotation);
+                        Instantiate(bullet, transform.position + (Vector3.right * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 0f));
                     }
                     else if (animator.GetCurrentAnimatorStateInfo(0).IsName("reddown"))
                     {
-                        Instantiate(fire_down, transform.position + (Vector3.down * 0.4f) + Vector3.forward, transform.rotation);
-                        Instantiate(bullet, transform.position + (Vector3.down * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 270f));
+                        Instantiate(fire_down, transform.position + (Vector3.down * 0.5f) + Vector3.forward, transform.rotation);
+                        Instantiate(bullet, transform.position + (Vector3.down * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 270f));
                     }
                     else if (animator.GetCurrentAnimatorStateInfo(0).IsName("redup"))
                     {
-                        Instantiate(fire_up, transform.position + (Vector3.up * 0.4f) + Vector3.forward, transform.rotation);
-                        Instantiate(bullet, transform.position + (Vector3.up * 0.4f) + Vector3.forward, Quaternion.Euler(0f, 0f, 90f));
+                        Instantiate(fire_up, transform.position + (Vector3.up * 0.5f) + Vector3.forward, transform.rotation);
+                        Instantiate(bullet, transform.position + (Vector3.up * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 90f));
                     }
-                    shottimer = 2f;
                     animator.SetBool("shot", true);
                     fire = false;
                 }
                 else
                 {
-                    shottimer -= Time.deltaTime;
+                    if (shottimer < 0)
+                    {
+                        if (animator.GetCurrentAnimatorStateInfo(0).IsName("redleft"))
+                        {
+                            Instantiate(fire_left, transform.position + (Vector3.left * 0.5f) + Vector3.forward, transform.rotation);
+                            Instantiate(bullet, transform.position + (Vector3.left * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 180f));
+                        }
+                        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("redright"))
+                        {
+                            Instantiate(fire_right, transform.position + (Vector3.right * 0.5f) + Vector3.forward, transform.rotation);
+                            Instantiate(bullet, transform.position + (Vector3.right * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 0f));
+                        }
+                        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("reddown"))
+                        {
+                            Instantiate(fire_down, transform.position + (Vector3.down * 0.5f) + Vector3.forward, transform.rotation);
+                            Instantiate(bullet, transform.position + (Vector3.down * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 270f));
+                        }
+                        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("redup"))
+                        {
+                            Instantiate(fire_up, transform.position + (Vector3.up * 0.5f) + Vector3.forward, transform.rotation);
+                            Instantiate(bullet, transform.position + (Vector3.up * 0.5f) + Vector3.forward, Quaternion.Euler(0f, 0f, 90f));
+                        }
+                        shottimer = 2f;
+                        animator.SetBool("shot", true);
+                        fire = false;
+                    }
+                    else
+                    {
+                        shottimer -= Time.deltaTime;
+                    }
                 }
             }
-        }
 
-        else if (setbomb == true)
-        {
-            if (bombtimer < 0)
+            else if (setbomb == true)
             {
-                Instantiate(bombgameobject, transform.position, Quaternion.Euler(0f, 0f, 0f));
-                bombtimer = 2f;
+                if (bombtimer < 0)
+                {
+                    Instantiate(bombgameobject, transform.position, Quaternion.Euler(0f, 0f, 0f));
+                    bombtimer = 2f;
+                }
+                else { }
             }
-            else { }
+            bombtimer -= Time.deltaTime;
+            if (horizontal != previous_hor || vertical != previous_ver)
+            {
+                animator.SetFloat("horizontal", horizontal);
+                animator.SetFloat("vertical", vertical);
+            }
+            newPosition = new Vector3(horizontal, vertical, 0);
+            m_position.position += newPosition * Time.deltaTime * speed;
+            previous_hor = horizontal;
+            previous_ver = vertical;
         }
-        bombtimer -= Time.deltaTime;
-        if (horizontal != previous_hor || vertical != previous_ver)
-        {
-            animator.SetFloat("horizontal", horizontal);
-            animator.SetFloat("vertical", vertical);
-        }
-        newPosition = new Vector3(horizontal, vertical, 0);
-        m_position.position += newPosition * Time.deltaTime * speed;
-        previous_hor = horizontal;
-        previous_ver = vertical;
     }
 
 }
