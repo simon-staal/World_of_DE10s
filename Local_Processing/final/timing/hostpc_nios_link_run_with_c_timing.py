@@ -28,7 +28,7 @@ def process_directions(x, y):
 #   This function takes an input character and sends it to the NIOS II terminal. It then reads
 #   the reply printed to the NIOS II terminal and handles the relevant data.
 def send_on_jtag(cmd):
-    print(cmd)
+    # print(cmd)
     # assert len(cmd)==1, "Please make the cmd a single character"
 
     # command we will run to send information to the NIOS II terminal
@@ -46,10 +46,11 @@ def send_on_jtag(cmd):
     # vals[1].strip() indicates the first output from the NIOS II terminal and is stored in x
     # x = vals[1].strip()
 
-    i = 0
+    i = 1
+    # print(vals[0].strip())
 
-    while vals[i].strip != "END"
-        print(vals[i].strip)
+    while vals[i].strip() != "END":
+        print(vals[i].strip())
         i+=1
 
         #   Output processing
@@ -73,8 +74,21 @@ def send_on_jtag(cmd):
 
 def main():
 
-    while True:
-        send_on_jtag('s')
+    print("sending an s")
+    send_on_jtag('s')
+    print("=======================")
+    print("sending an n")
+    send_on_jtag('n')
+    print("=======================")
+    print("sending an r")
+    send_on_jtag('r')
+    print("=======================")
+    print("sending an l")
+    send_on_jtag('l')
+    print("=======================")
+    print("sending a w")
+    send_on_jtag('w')
+
 
         # Testing NIOS II to Ecplise by just printing to the terminal
     # cmd - variable we send to eclipse

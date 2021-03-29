@@ -45,11 +45,11 @@ int main()
     /*
         Timing structure
         start = clock();
-        
+
         < Insert your code you are timing here >
 
         end = clock();
-        double dif = (end - start) / CLOCKS_PER_SEC;
+        dif = ((double)(end-start)) / CLOCKS_PER_SEC;
         fprintf(fp, "Time taken to <perform this section of the code>: %d seconds \n", dif);
         https://stackoverflow.com/questions/5248915/execution-time-of-c-program
     */
@@ -65,18 +65,20 @@ int main()
 	IOWR(LED_BASE, 0, score);
 
     // Timing variables
-    clock_t start;
-    clock_t end;
+    clock_t start, end;
+    double dif;
 
 	// Instantiating the accelerometer SPI (Serial Peripheral Interface).
 	// Allows us to interface between the accelerometer and the NIOS II processor
 	//	then read data from the accelerometer.
     start = clock();
+    fprintf(fp, "<--> open spi start : %g <-->", (double) start);
 	alt_up_accelerometer_spi_dev * acc_dev;
 	acc_dev = alt_up_accelerometer_spi_open_dev ("/dev/accelerometer_spi");
     end = clock();
-	double dif = (end - start) / CLOCKS_PER_SEC;
-    fprintf(fp, "<--> Time taken to connect to SPI: %d seconds <-->\n", dif);
+    fprintf(fp, "<--> open spi end : %g <-->", (double) start);
+	dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+	dif *= 1000;
 
 	// Check if the SPI has been instantiated properly
 	if ( acc_dev == NULL){
@@ -87,34 +89,39 @@ int main()
 
 	// Initialize board components with nothing
 	// 7-segment displays
-    start = clock();
 	reset_hex();
     end = clock();
-    double dif = (end - start) / CLOCKS_PER_SEC;
-    fprintf(fp, "<--> Time taken to call reset_hex(): %d seconds <--> \n", dif);
 
 	// LEDs
 	IOWR(LED_BASE, 0, 0b0000000000);
 
 	// Access stream of data through the jtag_uart in the variable fp
     start = clock();
+    fprintf(fp, "<--> open jtag start : %g <-->", (double) start);
 	fp = fopen ("/dev/jtag_uart", "r+"); // r+ opens a file for reading and updating
     end = clock();
-    double dif = (end - start) / CLOCKS_PER_SEC;
-    fprintf(fp, "<--> Time taken to open JTAG UART path: %d seconds <--> \n", dif);
+    fprintf(fp, "<--> open jtag end : %g <-->", (double) start);
+    dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+    dif *= 1000;
+    // fprintf(fp, "<--> Time taken to open JTAG UART path: %d seconds <-->", dif);
 
 	// If the file path was successfully opened
 	if (fp) {
 		// 'v' is used as the character to stop the program
 		while (prompt != 'v') {
+			fprintf(fp, "<--> Time taken to connect to SPI: %g ms <-->", dif);
+			fprintf(fp, "<--> Time taken to open JTAG UART path: %g ms <-->", dif);
 			prompt = getc(fp);
 			//	Assign winner if their score reaches 10
-			if (score == 0b1111111111){
+			if (prompt == 'w' || score == 0b1111111111){
                 start = clock();
+	            fprintf(fp, "<--> winner start : %g <-->", (double) start);
 				print_winner();
                 end = clock();
-                double dif = (end - start) / CLOCKS_PER_SEC;
-                fprintf(fp, "<--> Time taken to print winner: %d seconds <--> \n", dif);
+	            fprintf(fp, "<--> winner end : %g <-->", (double) start);
+                dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+                dif *= 1000;
+                fprintf(fp, "<--> Time taken to print winner: %g ms <-->", dif);
 
 				// Character with no effect to avoid error
 				fprintf(fp, "<--> q <--> \n");
@@ -127,11 +134,13 @@ int main()
 			//	Assign the loser if an 'l' is sent to their processor
 			}else if (prompt == 'l'){
 				// Same setup as print_winner() scope but for print_loser()
-                end = clock();
+                start = clock();
+	            fprintf(fp, "<--> loser start : %g <-->", (double) start);
 				print_loser();
                 end = clock();
-                double dif = (end - start) / CLOCKS_PER_SEC;
-                fprintf(fp, "<--> Time taken to print loser: %d seconds <--> \n", dif);
+	            fprintf(fp, "<--> loser end : %g <-->", (double) start);
+                dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+                fprintf(fp, "<--> Time taken to print loser: %g ms <-->", dif);
 
 				fprintf(fp, "<--> q <--> \n");
 				usleep(7000000);
@@ -142,24 +151,29 @@ int main()
 			//	Increment this processor's score after receiving an 'n'
 			}else if (prompt == 'n'){ // increment score
 				// handling the initial value
-				if (score == 0b0000000000){	
-					score = 0b0000000001;
-					// read the value into the LEDs
-					IOWR(LED_BASE, 0, score);
-				}else{	// general case for incrementing the score
+//				if (score == 0b0000000000){
+//					score = 0b0000000001;
+//					// read the value into the LEDs
+//					IOWR(LED_BASE, 0, score);
+//				}else{	// general case for incrementing the score
+//
 					// shifting the value to increase the visual score on the LEDs
                     start = clock();
+    	            fprintf(fp, "<--> increment start : %g <-->", (double) start);
 					score <<= 1;
 					// fill the LSBs with 1s
 					score |= 1;
 					// write the updated value to the LEDs
 					IOWR(LED_BASE, 0, score);
                     end = clock();
-                    double dif = (end - start) / CLOCKS_PER_SEC;
-                    fprintf(fp, "<--> Time taken to increment score: %d seconds <--> \n", dif);
-				}
+    	            fprintf(fp, "<--> increment end : %g <-->", (double) start);
+                    dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+                    dif *= 1000;
+                    fprintf(fp, "<--> Time taken to increment score: %g ms <-->", dif);
+				// }
 			}else if (prompt == 'r'){ // reset the board displays, used at the start of the game
 				start = clock();
+	            fprintf(fp, "<--> reset start : %g <-->", (double) start);
                 // Reset the 7-seg displays to nothing
 				reset_hex();
 				// Reset the LEDs to display nothing
@@ -167,47 +181,55 @@ int main()
 				IOWR(LED_BASE, 0, 0b0000000000);
 
                 end = clock();
-                double dif = (end - start) / CLOCKS_PER_SEC;
-                fprintf(fp, "<--> Time taken to reset everything: %d seconds <--> \n", dif);
-				// Useless output characters used to output nothing
-	            fprintf(fp, "<--> 0 <--> \n");
-	            fprintf(fp, "<--> 0 <--> \n");
+                fprintf(fp, "<--> reset end : %g <-->", (double) start);
+                dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+                dif *= 1000;
+                fprintf(fp, "<--> Time taken to reset everything: %g seconds <-->", dif);
+				// Useless characters used to output nothing
 			}
 
 			// 		Button management
             start = clock();
+            fprintf(fp, "<--> button-read start : %g <-->", (double) start);
 			int button_datain= ~IORD_ALTERA_AVALON_PIO_DATA(BUTTON_BASE);
 			button_datain &= 0b11;
             end = clock();
-            double dif = (end - start) / CLOCKS_PER_SEC;
-            fprintf(fp, "<--> Time taken to read button value: %d seconds <--> \n", dif);
+            fprintf(fp, "<--> button-read end : %g <-->", (double) start);
+            dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+            dif *= 1000;
+            fprintf(fp, "<--> Time taken to read button value: %g ms <-->", dif);
 
 			if(button_datain == 1){ // Fire guns, top button
-				fprintf(fp, "<--> e <--> \n");
+				fprintf(fp, "<--> ### Top button being pressed ### <-->");
 			}else if(button_datain == 2){ // Throw bomb, bottom button
-				fprintf(fp, "<--> r <--> \n");
+				fprintf(fp, "<--> ### Bottom button being pressed ### <-->");
 			}
 
 				// Read accelerometer values then print to the Nios II terminal
 			// x-axis value
             start = clock();
+            fprintf(fp, "<--> x-read start : %g <-->", (double) start);
 			alt_up_accelerometer_spi_read_x_axis(acc_dev, &x);
             end = clock();
-            double dif = (end - start) / CLOCKS_PER_SEC;
-            fprintf(fp, "<--> Time taken to read x-axis: %d seconds <--> \n", dif);
-
-            fprintf(fp, "<--> %i <--> \n", x);
+            fprintf(fp, "<--> x-read end : %g <-->", (double) end);
+            dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+            dif *= 1000;
+            fprintf(fp, "<--> Time taken to read x-axis: %g ms <-->", dif);
+            fprintf(fp, "<--> x-value : %d <-->", x);
 
             // y-axis value
             start = clock();
+            fprintf(fp, "<--> y-read start : %g <-->", (double) start);
 			alt_up_accelerometer_spi_read_y_axis(acc_dev, &y);
             end = clock();
-            double dif = (end - start) / CLOCKS_PER_SEC;
-            fprintf(fp, "<--> Time taken to read y-axis: %d seconds <--> \n", dif);
+            fprintf(fp, "<--> y-read end : %g <-->", (double) end);
+            dif = ((double)(end-start)) / CLOCKS_PER_SEC;
+            dif *= 1000;
+            fprintf(fp, "<--> Time taken to read y-axis: %g ms <-->", dif);
 
-            fprintf(fp, "<--> %i <--> \n", y);
+            fprintf(fp, "<--> y-value : %d <-->", y);
 			// Output a 0x4 to indicate the end of the character stream;
-			// same as doing CTRL + D in the NIOS II terminal. Needed to 
+			// same as doing CTRL + D in the NIOS II terminal. Needed to
 			// output characters to the JTAG UART stream.
             fprintf(fp, "<--> END <--> \n %c", 0x4);
 
